@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xpero+ | Luxury Handcrafted Lighting & Artisanal Home Decor</title>
+  <meta name="description" content="Ditch the main overhead bulb! Discover Xpero+'s signature artisanal lamps for a warm, cozy vibe. Handcrafted brass, linen, and ceramics exported worldwide.">
+  <meta name="keywords" content="Xpero+, handcrafted lamps, pleated linen floor lamp, crystal chandelier, ceramic table lamp, candle warmer lamp, cozy lighting, luxury home decor, export lighting">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span class="announce-item primary">🌐 Worldwide Export Delivery to 45+ Countries</span>
+    <span class="announce-item">⚡ <span class="highlight">UL, CE & RoHS Certified</span> (110V / 240V)</span>
+    <span class="announce-item announce-extra">✨ B2B Wholesale & Custom Manufacturing</span>
+    <span class="announce-item announce-extra">📞 Export Desk: <a href="mailto:export@xperoplus.com" style="text-decoration: underline;">export@xperoplus.com</a></span>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="#" class="brand-logo">
+        <span class="logo-main">Xpero+</span>
+        <span class="logo-sub">Artisanal Lighting & Home Luxuries</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#signature-collection" class="active">Lamps</a></li>
+          <li><a href="#craftsmanship">Artisanship</a></li>
+          <li><a href="#export-capabilities">Export Standards</a></li>
+          <li><a href="#rfq-section">Wholesale RFQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Interactive Cozy Mode Toggle -->
+        <button id="ambientToggleBtn" class="ambient-toggle-btn" title="Toggle cozy evening ambiance">
+          <span class="btn-text-full">💡 Ambient Warmth</span>
+          <span class="btn-text-short">💡 Cozy</span>
+        </button>
+
+        <!-- Catalog Download -->
+        <button class="btn-catalog trigger-catalog" title="Download Export Lookbook PDF">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span class="catalog-text">Lookbook 2026</span>
+        </button>
+
+        <!-- Cart / Quote Drawer Button -->
+        <button id="cartBtn" class="cart-inquiry-btn" title="View Quote & Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+          <span id="cartCountBadge" class="cart-badge-count" style="display: none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Poster Section (Inspired by the Reference Design) -->
+  <section class="hero-poster-section" id="hero">
+    <div class="container hero-layout">
+      
+      <!-- Left Editorial Column -->
+      <div class="hero-copy">
+        <div class="poster-cursive-title">Ditch The</div>
+        <h1 class="poster-serif-title">Main Overhead <span class="bulb">Bulb!</span></h1>
+        
+        <div class="hero-badge-pill">
+          <span class="heart">♥</span>
+          <span class="pill-text">Lamps For A Warm &amp; Cozy Vibe</span>
+          <span class="heart">♥</span>
+        </div>
+
+        <p class="hero-description">
+          Sterile ceiling lights drain your home’s soul. Embrace layered, tactile illumination with hand-spun linen, warm brushed brass, and organic ceramics crafted to transform any living space into a comforting sanctuary.
+        </p>
+
+        <!-- 4 Key Feature Icons from reference poster -->
+        <div class="hero-features-grid">
+          <div class="hero-feature-item">
+            <div class="feature-icon-circle">
+              <!-- House Icon -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <span class="feature-label">Instant Cozy Upgrade</span>
+          </div>
+
+          <div class="hero-feature-item">
+            <div class="feature-icon-circle">
+              <!-- Lightbulb Icon -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+            </div>
+            <span class="feature-label">Warm, Soft Lighting</span>
+          </div>
+
+          <div class="hero-feature-item">
+            <div class="feature-icon-circle">
+              <!-- Botanical Leaves Icon -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+            </div>
+            <span class="feature-label">Stylish Pieces You'll Love</span>
+          </div>
+
+          <div class="hero-feature-item">
+            <div class="feature-icon-circle">
+              <!-- Shield Check Icon -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <span class="feature-label">Quality You Can Trust</span>
+          </div>
+        </div>
+
+        <!-- Room Dimmer Interactive Slider Bar -->
+        <div class="ambient-slider-bar">
+          <label for="heroAmbientSlider">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            Room Glow Intensity:
+          </label>
+          <input type="range" id="heroAmbientSlider" min="20" max="100" value="85" title="Slide to adjust ambient warmth">
+          <span class="slider-val" id="heroSliderValue">85%</span>
+        </div>
+      </div>
+
+      <!-- Right Visual Column with Circular Hug Badge -->
+      <div class="hero-visual-card">
+        <div class="hero-image-wrap">
+          <img src="assets/images/hero.jpg" alt="Xpero+ warm cozy living room corner with pleated linen floor lamp" id="heroImage">
+        </div>
+
+        <!-- Floating Warm Hug Badge from Reference -->
+        <div class="warm-hug-badge" title="Artisanal warmth guaranteed">
+          <span class="sparkle">✦</span>
+          <div class="badge-text">Create A Home That Feels Like A Warm Hug</div>
+          <span class="badge-heart">♥</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- The 6 Signature Lamps Collection Section (Exact Reference Layout) -->
+  <section class="signature-collection-section" id="signature-collection">
+    <div class="container">
+      
+      <div class="section-header-wrap">
+        <div class="section-eyebrow">Handcrafted Essentials</div>
+        <h2 class="section-title">Signature Lamps</h2>
+        <p class="section-subtitle">
+          Each piece is engineered in our export ateliers with precision wiring, premium certified materials, and custom dimmer compatibility.
+        </p>
+      </div>
+
+      <!-- The 6-Lamp Grid -->
+      <div class="lamps-poster-grid">
+
+        <!-- Lamp 1: Monstera Leaf Sculptural Lamp -->
+        <article class="lamp-poster-card" id="card-lamp-1">
+          <div class="card-image-box">
+            <img src="assets/images/lamp-1.jpg" alt="Monstera Leaf Sculptural Lamp by Xpero+" loading="lazy">
+            <div class="warm-halo"></div>
+            <div class="card-overlay-actions">
+              <button class="btn-overlay-action" onclick="openQuickView(1)">Quick View &amp; Dimmer</button>
+              <button class="btn-overlay-action" onclick="addToCart(1)">+ Add to Quote</button>
+            </div>
+          </div>
+          <div class="card-caption-bar">
+            <div class="lamp-number-pill">1</div>
+            <div class="lamp-title-wrap">
+              <h3 class="lamp-title">Monstera Leaf Sculptural Lamp</h3>
+              <p class="lamp-export-moq">Layered Birch Wood • MOQ: 15 units</p>
+            </div>
+          </div>
+          <div class="card-pricing-row">
+            <span class="price-tag">$195 USD</span>
+            <span class="export-tag">Export FOB Available</span>
+          </div>
+        </article>
+
+        <!-- Lamp 2: Crystal Statement Chandelier -->
+        <article class="lamp-poster-card" id="card-lamp-2">
+          <div class="card-image-box">
+            <img src="assets/images/lamp-2.jpg" alt="Crystal Statement Chandelier by Xpero+" loading="lazy">
+            <div class="warm-halo"></div>
+            <div class="card-overlay-actions">
+              <button class="btn-overlay-action" onclick="openQuickView(2)">Quick View &amp; Dimmer</button>
+              <button class="btn-overlay-action" onclick="addToCart(2)">+ Add to Quote</button>
+            </div>
+          </div>
+          <div class="card-caption-bar">
+            <div class="lamp-number-pill">2</div>
+            <div class="lamp-title-wrap">
+              <h3 class="lamp-title">Crystal Statement Chandelier</h3>
+              <p class="lamp-export-moq">Multi-Tier K9 Prisms • MOQ: 5 units</p>
+            </div>
+          </div>
+          <div class="card-pricing-row">
+            <span class="price-tag">$849 USD</span>
+            <span class="export-tag">Export FOB Available</span>
+          </div>
+        </article>
+
+        <!-- Lamp 3: Textured Ceramic Lamp Pair -->
+        <article class="lamp-poster-card" id="card-lamp-3">
+          <div class="card-image-box">
+            <img src="assets/images/lamp-3.jpg" alt="Textured Ceramic Lamp Pair by Xpero+" loading="lazy">
+            <div class="warm-halo"></div>
+            <div class="card-overlay-actions">
+              <button class="btn-overlay-action" onclick="openQuickView(3)">Quick View &amp; Dimmer</button>
+              <button class="btn-overlay-action" onclick="addToCart(3)">+ Add to Quote</button>
+            </div>
+          </div>
+          <div class="card-caption-bar">
+            <div class="lamp-number-pill">3</div>
+            <div class="lamp-title-wrap">
+              <h3 class="lamp-title">Textured Ceramic Lamp Pair</h3>
+              <p class="lamp-export-moq">Stoneware Set of 2 • MOQ: 15 pairs</p>
+            </div>
+          </div>
+          <div class="card-pricing-row">
+            <span class="price-tag">$320 USD <small>(Pair)</small></span>
+            <span class="export-tag">Export FOB Available</span>
+          </div>
+        </article>
+
+        <!-- Lamp 4: Ribbed Ceramic Table Lamp -->
+        <article class="lamp-poster-card" id="card-lamp-4">
+          <div class="card-image-box">
+            <img src="assets/images/lamp-4.jpg" alt="Ribbed Ceramic Table Lamp by Xpero+" loading="lazy">
+            <div class="warm-halo"></div>
+            <div class="card-overlay-actions">
+              <button class="btn-overlay-action" onclick="openQuickView(4)">Quick View &amp; Dimmer</button>
+              <button class="btn-overlay-action" onclick="addToCart(4)">+ Add to Quote</button>
+            </div>
+          </div>
+          <div class="card-caption-bar">
+            <div class="lamp-number-pill">4</div>
+            <div class="lamp-title-wrap">
+              <h3 class="lamp-title">Ribbed Ceramic Table Lamp</h3>
+              <p class="lamp-export-moq">Fluted Base &amp; Drum • MOQ: 20 units</p>
+            </div>
+          </div>
+          <div class="card-pricing-row">
+            <span class="price-tag">$165 USD</span>
+            <span class="export-tag">Export FOB Available</span>
+          </div>
+        </article>
+
+        <!-- Lamp 5: Ambient Sculptural Lamp -->
+        <article class="lamp-poster-card" id="card-lamp-5">
+          <div class="card-image-box">
+            <img src="assets/images/lamp-5.jpg" alt="Ambient Sculptural Lamp by Xpero+" loading="lazy">
+            <div class="warm-halo"></div>
+            <div class="card-overlay-actions">
+              <button class="btn-overlay-action" onclick="openQuickView(5)">Quick View &amp; Dimmer</button>
+              <button class="btn-overlay-action" onclick="addToCart(5)">+ Add to Quote</button>
+            </div>
+          </div>
+          <div class="card-caption-bar">
+            <div class="lamp-number-pill">5</div>
+            <div class="lamp-title-wrap">
+              <h3 class="lamp-title">Ambient Sculptural Lamp</h3>
+              <p class="lamp-export-moq">Twisted Spiral Core • MOQ: 15 units</p>
+            </div>
+          </div>
+          <div class="card-pricing-row">
+            <span class="price-tag">$210 USD</span>
+            <span class="export-tag">Export FOB Available</span>
+          </div>
+        </article>
+
+        <!-- Lamp 6: Adjustable Candle Warmer Lamp -->
+        <article class="lamp-poster-card" id="card-lamp-6">
+          <div class="card-image-box">
+            <img src="assets/images/lamp-6.jpg" alt="Adjustable Candle Warmer Lamp by Xpero+" loading="lazy">
+            <div class="warm-halo"></div>
+            <div class="card-overlay-actions">
+              <button class="btn-overlay-action" onclick="openQuickView(6)">Quick View &amp; Dimmer</button>
+              <button class="btn-overlay-action" onclick="addToCart(6)">+ Add to Quote</button>
+            </div>
+          </div>
+          <div class="card-caption-bar">
+            <div class="lamp-number-pill">6</div>
+            <div class="lamp-title-wrap">
+              <h3 class="lamp-title">Adjustable Candle Warmer Lamp</h3>
+              <p class="lamp-export-moq">Carrara Marble Base • MOQ: 25 units</p>
+            </div>
+          </div>
+          <div class="card-pricing-row">
+            <span class="price-tag">$125 USD</span>
+            <span class="export-tag">Export FOB Available</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Master Call To Action Banner (Exact match to reference bottom banner) -->
+      <div class="poster-cta-wrapper">
+        <button id="btnShopAllMaster" class="poster-master-cta-btn" title="Add all lamps to your curated collection">
+          <span class="cta-cart-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </span>
+          <span>SHOP ALL LAMPS &amp; TRANSFORM YOUR SPACE</span>
+          <span class="cta-arrow">➔</span>
+        </button>
+
+        <div class="poster-footer-caption">
+          <span>✦</span>
+          <span>LIGHT UP THE MOMENTS THAT MATTER MOST</span>
+          <span class="heart">♥</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Craftsmanship & Global Export Capabilities Section -->
+  <section class="craftsmanship-section" id="craftsmanship">
+    <div class="container">
+      <div class="section-header-wrap">
+        <div class="section-eyebrow">Export Grade Excellence</div>
+        <h2 class="section-title">Built for Discerning Global Markets</h2>
+        <p class="section-subtitle">
+          From North America to Europe, Australia, and the Middle East, Xpero+ delivers certified safety, bespoke voltage configurations, and drop-tested transit protection.
+        </p>
+      </div>
+
+      <div class="craftsmanship-grid">
+        <div class="craft-card">
+          <div class="craft-icon">⚡</div>
+          <h3 class="craft-title">Multi-Market Voltage</h3>
+          <p class="craft-desc">Equipped with custom wiring for 110V-120V US (Type A/B), 220V-240V EU (Type C/F), UK (Type G), and Gulf SASO standards.</p>
+        </div>
+
+        <div class="craft-card">
+          <div class="craft-icon">📦</div>
+          <h3 class="craft-title">ISTA 3A Drop-Tested</h3>
+          <p class="craft-desc">Engineered for e-commerce courier handling and sea-freight containers with multi-layered high-density honeycomb packaging.</p>
+        </div>
+
+        <div class="craft-card">
+          <div class="craft-icon">🔨</div>
+          <h3 class="craft-title">Master Artisanship</h3>
+          <p class="craft-desc">Pure hand-spun brass, kiln-fired ribbed stoneware ceramics, and French-folded natural linen shades crafted by generational artisans.</p>
+        </div>
+
+        <div class="craft-card">
+          <div class="craft-icon">🚢</div>
+          <h3 class="craft-title">LCL &amp; FCL Container Ready</h3>
+          <p class="craft-desc">Full palletization, barcoded master cartons, custom branding labels, and streamlined export documentation directly to your port.</p>
+        </div>
+      </div>
+
+      <!-- Export Statistics -->
+      <div class="export-stats-row" id="export-capabilities">
+        <div class="stat-box">
+          <div class="stat-num">45+</div>
+          <div class="stat-label">Export Destinations</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">120K+</div>
+          <div class="stat-label">Lamps Delivered Globally</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">CE / UL Safety Compliant</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">99.8%</div>
+          <div class="stat-label">On-Time Port Dispatch</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Wholesale & Export RFQ Form Section -->
+  <section class="rfq-section" id="rfq-section">
+    <div class="container">
+      <div class="rfq-layout">
+        
+        <div class="rfq-info">
+          <div class="section-eyebrow">B2B Trade &amp; Exports</div>
+          <h3>Request Direct Factory Wholesale Quotation</h3>
+          <p>
+            Whether you are an interior design firm, boutique lighting retailer, or international distributor, our export sales engineers will provide comprehensive FOB/CIF container quotes within 24 hours.
+          </p>
+
+          <ul class="rfq-perks">
+            <li><span class="check-icon">✓</span> Custom finish options (brass, antique bronze, matte black, ceramic glazes)</li>
+            <li><span class="check-icon">✓</span> Free physical sample courier for verified trade accounts</li>
+            <li><span class="check-icon">✓</span> Private label packaging and barcode integration</li>
+            <li><span class="check-icon">✓</span> Flexible MOQs starting from just 5–25 units per SKU</li>
+          </ul>
+
+          <div class="rfq-direct-links">
+            <a href="https://api.whatsapp.com/send?phone=919876543210&text=Hello%20Xpero%2B%20team,%20I%20am%20interested%20in%20your%20signature%20lamps%20for%20export/wholesale." target="_blank" class="btn-whatsapp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.44 0-2.85-.38-4.08-1.1l-.29-.17-3.04.8 1.05-2.96-.19-.3A8.15 8.15 0 0 1 3.8 11.91c0-4.54 3.7-8.24 8.25-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"/></svg>
+              Chat on WhatsApp Export Desk
+            </a>
+          </div>
+        </div>
+
+        <form class="rfq-form" id="rfqForm">
+          <div class="form-group">
+            <label for="rfqName">Your Name *</label>
+            <input type="text" id="rfqName" name="name" required placeholder="e.g. Eleanor Vance">
+          </div>
+
+          <div class="form-group">
+            <label for="rfqCompany">Company / Studio *</label>
+            <input type="text" id="rfqCompany" name="company" required placeholder="e.g. Lumina Living Ltd">
+          </div>
+
+          <div class="form-group">
+            <label for="rfqEmail">Business Email *</label>
+            <input type="email" id="rfqEmail" name="email" required placeholder="eleanor@lumina.com">
+          </div>
+
+          <div class="form-group">
+            <label for="rfqCountry">Country of Destination *</label>
+            <input type="text" id="rfqCountry" name="country" required placeholder="e.g. United States, Germany, UAE">
+          </div>
+
+          <div class="form-group">
+            <label for="rfqInterest">Primary Lamp of Interest</label>
+            <select id="rfqInterest" name="lamp_interest">
+              <option value="All Lamps (Curated Collection)">All Signature Lamps (Complete Set)</option>
+              <option value="Lamp 1: Monstera Leaf Sculptural Lamp">1. Monstera Leaf Sculptural Lamp</option>
+              <option value="Lamp 2: Crystal Statement Chandelier">2. Crystal Statement Chandelier</option>
+              <option value="Lamp 3: Textured Ceramic Lamp Pair">3. Textured Ceramic Lamp Pair</option>
+              <option value="Lamp 4: Ribbed Ceramic Table Lamp">4. Ribbed Ceramic Table Lamp</option>
+              <option value="Lamp 5: Ambient Sculptural Lamp">5. Ambient Sculptural Lamp</option>
+              <option value="Lamp 6: Candle Warmer Lamp">6. Adjustable Candle Warmer Lamp</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="rfqQty">Estimated Order Quantity</label>
+            <select id="rfqQty" name="quantity">
+              <option value="Sample Pack (1 set of all 6)">Sample Evaluation Set (All 6)</option>
+              <option value="Small Batch (25 - 50 units)">Small Batch (25 - 50 units)</option>
+              <option value="Commercial Batch (50 - 200 units)">Commercial Batch (50 - 200 units)</option>
+              <option value="Full Container Load (FCL 20ft / 40ft)">Full Container Load (FCL)</option>
+            </select>
+          </div>
+
+          <div class="form-group full">
+            <label for="rfqNotes">Project Specifications / Port of Entry</label>
+            <textarea id="rfqNotes" name="notes" rows="3" placeholder="Specify required voltage, certifications (UL/CE), or target delivery timeline..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit-rfq">Submit Wholesale RFQ</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-main">Xpero+</div>
+          <span class="logo-sub">Artisanal Lighting &amp; Decor</span>
+          <p>
+            Illuminating homes worldwide with handcrafted warmth, certified electrical safety, and timeless artisanal aesthetics.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Signature Lamps</h4>
+          <ul class="footer-links">
+            <li><a href="#signature-collection" onclick="openQuickView(1)">1. Monstera Leaf Sculptural Lamp</a></li>
+            <li><a href="#signature-collection" onclick="openQuickView(2)">2. Crystal Statement Chandelier</a></li>
+            <li><a href="#signature-collection" onclick="openQuickView(3)">3. Textured Ceramic Lamp Pair</a></li>
+            <li><a href="#signature-collection" onclick="openQuickView(4)">4. Ribbed Ceramic Table Lamp</a></li>
+            <li><a href="#signature-collection" onclick="openQuickView(5)">5. Ambient Sculptural Lamp</a></li>
+            <li><a href="#signature-collection" onclick="openQuickView(6)">6. Candle Warmer Lamp</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Global Trade</h4>
+          <ul class="footer-links">
+            <li><a href="#export-capabilities">Export Standards</a></li>
+            <li><a href="#" class="trigger-catalog">Download 2026 Catalog</a></li>
+            <li><a href="#rfq-section">B2B Wholesale Inquiry</a></li>
+            <li><a href="#craftsmanship">ISTA 3A Packaging</a></li>
+            <li><a href="#craftsmanship">UL &amp; CE Certifications</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Export Headquarters</h4>
+          <p style="font-size: 0.88rem; line-height: 1.7; margin-bottom: 0.8rem;">
+            Xpero+ International Division<br>
+            Industrial Export Zone, Sector 4<br>
+            Email: export@xperoplus.com<br>
+            Direct: +91 (0) 98765 43210
+          </p>
+          <div style="display: flex; gap: 0.6rem;">
+            <button class="ambient-toggle-btn" onclick="toggleCozyMode()" style="font-size: 0.75rem;">
+              ✨ Night Ambiance
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Xpero+. All Rights Reserved. Master Craftsmen &amp; Global Exporters.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Export</a>
+          <a href="#">Port Logistics</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick View & Light Dimmer Modal -->
+  <div class="modal-backdrop" id="quickViewBackdrop">
+    <div class="quick-view-modal">
+      <button class="btn-modal-close" id="closeQuickView" title="Close dialog">&times;</button>
+      
+      <div class="modal-image-preview">
+        <img src="assets/images/lamp-1.jpg" alt="Selected Lamp Preview" id="modalImage">
+      </div>
+
+      <div class="modal-product-details">
+        <span class="modal-product-number" id="modalProductNumber">Piece No. 1 of 6</span>
+        <h3 class="modal-product-title" id="modalProductTitle">Pleated Linen Floor Lamp</h3>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;" id="modalProductTagline">
+          Arched Solid Brass Stem &amp; Fluted Cream Linen Conical Shade
+        </p>
+
+        <div class="modal-pricing-box">
+          <span class="modal-retail-price" id="modalProductRetail">$289 USD</span>
+          <span class="modal-export-fob" id="modalProductExport">Export FOB: $145 - $165 / unit (MOQ 10)</span>
+        </div>
+
+        <!-- Interactive Color Temperature / Dimmer Simulator -->
+        <div class="modal-light-tester">
+          <div class="tester-title">
+            <span>Color Temperature &amp; Glow Simulator</span>
+            <span id="modalTempDisplay" style="color: var(--accent-amber);">2700K</span>
+          </div>
+          <div class="tester-slider-row">
+            <span style="font-size: 0.72rem; color: var(--text-muted);">2200K (Candle)</span>
+            <input type="range" id="modalDimmerSlider" min="2200" max="4000" step="50" value="2700" title="Slide to simulate light color temperature">
+            <span style="font-size: 0.72rem; color: var(--text-muted);">4000K (Daylight)</span>
+          </div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.2rem;" id="modalProductDesc">
+          Loading detailed product description...
+        </p>
+
+        <!-- Technical Specification Table -->
+        <table class="spec-table">
+          <tbody id="modalSpecTableBody">
+            <!-- Dynamic specs inserted by JS -->
+          </tbody>
+        </table>
+
+        <div class="modal-action-buttons">
+          <button class="btn-add-quote" id="btnModalAddQuote">+ Add to Order / Quote</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart / Export Quotation Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <div class="cart-drawer">
+      <div class="drawer-header">
+        <h3>Export Quotation Cart</h3>
+        <button class="btn-modal-close" id="closeCartDrawer" style="position: static;">&times;</button>
+      </div>
+
+      <div class="drawer-items-list" id="drawerItemsList">
+        <!-- Rendered by JS -->
+      </div>
+
+      <div class="drawer-footer">
+        <div class="drawer-subtotal-row">
+          <span>Estimated Total:</span>
+          <span id="drawerSubtotal" style="color: var(--accent-amber);">$0</span>
+        </div>
+        <p class="drawer-export-note" id="drawerTotalItems">0 items selected</p>
+        <p class="drawer-export-note" style="margin-top: -0.6rem;">
+          * FOB Port Pricing and volume discounts apply automatically to international orders meeting MOQ.
+        </p>
+        <button class="btn-checkout-quote" onclick="dispatchWhatsAppQuote()">
+          💬 Request Quote via WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>

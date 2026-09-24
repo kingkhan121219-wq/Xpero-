@@ -505,28 +505,36 @@ function renderCart() {
 
   if (cart.length === 0) {
     drawerItemsList.innerHTML = `
-      <div style="text-align: center; padding: 3rem 1rem; color: var(--text-muted);">
+      <div style="text-align: center; padding: 2.5rem 1rem; color: var(--text-muted);">
         <p style="font-size: 2.5rem; margin-bottom: 0.8rem;">🕯️</p>
-        <p style="font-weight: 600; font-size: 1.1rem; color: var(--text-main);">Your quote list is empty</p>
-        <p style="font-size: 0.85rem; margin-top: 0.4rem;">Select from our 6 signature lamps to build your bespoke wholesale or retail order.</p>
+        <p style="font-weight: 600; font-size: 1.1rem; color: var(--text-main);">Your cart is empty</p>
+        <p style="font-size: 0.85rem; margin-top: 0.4rem; margin-bottom: 1.2rem; line-height: 1.5;">Select lamps from our collection or click below to add all 6 signature pieces to buy in 1-click on Amazon.</p>
+        <button class="btn-overlay-action" style="position: static; display: inline-flex;" onclick="addAllLampsToCart()">+ Add All 6 Signature Lamps</button>
       </div>
     `;
-    if (drawerSubtotal) drawerSubtotal.textContent = '$0';
-    if (drawerTotalItems) drawerTotalItems.textContent = '0 items';
+    if (drawerSubtotal) drawerSubtotal.textContent = '₹0 / $0';
+    if (drawerTotalItems) drawerTotalItems.textContent = '0 items selected';
     return;
   }
 
   let subtotal = 0;
+  let inrSubtotal = 0;
   drawerItemsList.innerHTML = cart.map(item => {
-    const itemTotal = item.price * item.qty;
+    const lamp = signatureLamps.find(l => l.id === item.id) || item;
+    const itemTotal = (lamp.price || item.price || 0) * item.qty;
+    const itemInrTotal = (lamp.inrPrice || 0) * item.qty;
     subtotal += itemTotal;
+    inrSubtotal += itemInrTotal;
     return `
       <div class="cart-item-card">
-        <img src="${item.image}" alt="${item.name}" class="cart-item-thumb">
+        <img src="${item.image || lamp.image}" alt="${item.name}" class="cart-item-thumb">
         <div class="cart-item-info">
           <h4 class="cart-item-title">${item.name}</h4>
-          <span class="cart-item-sub">MOQ: ${item.moq}</span>
-          <div class="cart-item-price">$${itemTotal.toLocaleString()} <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 400;">($${item.price} each)</span></div>
+          <span class="cart-item-sub">Amazon ASIN: ${lamp.asin || 'Official'} • Model: ${lamp.model || ''}</span>
+          <div class="cart-item-price">
+            ₹${itemInrTotal.toLocaleString('en-IN')}
+            <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 400;">(~$${itemTotal} USD)</span>
+          </div>
           <div class="cart-qty-stepper">
             <button type="button" class="btn-qty-step" onclick="updateCartQty(${item.id}, -1)" title="Decrease quantity">&minus;</button>
             <span class="cart-qty-value">${item.qty}</span>
@@ -538,8 +546,12 @@ function renderCart() {
     `;
   }).join('');
 
-  if (drawerSubtotal) drawerSubtotal.textContent = `$${subtotal.toLocaleString()}`;
-  if (drawerTotalItems) drawerTotalItems.textContent = `${totalCount} item${totalCount > 1 ? 's' : ''}`;
+  if (drawerSubtotal) {
+    drawerSubtotal.innerHTML = `₹${inrSubtotal.toLocaleString('en-IN')} <span style="font-size: 0.82rem; color: var(--text-muted); font-weight: 400;">(~$${subtotal.toLocaleString()} USD)</span>`;
+  }
+  if (drawerTotalItems) {
+    drawerTotalItems.textContent = `${totalCount} item${totalCount > 1 ? 's' : ''} ready to buy on Amazon`;
+  }
 }
 
 window.openCart = function() {
@@ -556,6 +568,42 @@ window.closeCart = function() {
   document.body.style.overflow = '';
 };
 
+// Redirect to Amazon Panel with all selected lamps to Buy in One Click
+window.buyAllOnAmazon = function() {
+  if (!cart || cart.length === 0) {
+    // If no lamps are selected yet, automatically add all 6 signature lamps
+    addAllLampsToCart();
+  }
+
+  // Construct Amazon India remote cart parameters
+  // URL pattern: https://www.amazon.in/gp/aws/cart/add.html?ASIN.1=...&Quantity.1=...
+  const queryParts = [];
+  let itemIndex = 1;
+
+  cart.forEach(cartItem => {
+    const lamp = signatureLamps.find(l => l.id === cartItem.id);
+    const asin = (lamp && lamp.asin) || cartItem.asin;
+    const qty = Math.max(1, parseInt(cartItem.qty, 10) || 1);
+    if (asin) {
+      queryParts.push(`ASIN.${itemIndex}=${encodeURIComponent(asin)}&Quantity.${itemIndex}=${qty}`);
+      itemIndex++;
+    }
+  });
+
+  if (queryParts.length === 0) {
+    showToast('No valid Amazon products found in selection.');
+    return;
+  }
+
+  const amazonCartUrl = `https://www.amazon.in/gp/aws/cart/add.html?${queryParts.join('&')}`;
+  const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
+
+  showToast(`🛒 Redirecting to Amazon India with all ${totalCount} selected lamp(s) in 1-Click...`);
+
+  // Open Amazon Cart in new window
+  window.open(amazonCartUrl, '_blank', 'noopener,noreferrer');
+};
+
 // Generate & Dispatch Export Quote to WhatsApp
 window.dispatchWhatsAppQuote = function() {
   if (cart.length === 0) {
@@ -565,7 +613,9 @@ window.dispatchWhatsAppQuote = function() {
 
   let message = `Hello Xpero+ Team! I am interested in placing an export/wholesale order for the following signature lamps:\n\n`;
   cart.forEach((item, idx) => {
-    message += `${idx + 1}. ${item.name} - Qty: ${item.qty} (Est. $${(item.price * item.qty).toLocaleString()})\n`;
+    const lamp = signatureLamps.find(l => l.id === item.id) || item;
+    const inr = (lamp.inrPrice || 0) * item.qty;
+    message += `${idx + 1}. ${item.name} - Qty: ${item.qty} (₹${inr.toLocaleString('en-IN')} / $${(item.price * item.qty).toLocaleString()} USD)\n`;
   });
   const subtotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
   message += `\nEstimated Value: $${subtotal.toLocaleString()} USD`;

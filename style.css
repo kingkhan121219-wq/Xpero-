@@ -1655,22 +1655,52 @@ body.cozy-mode-active .amazon-badge-link {
 
 .btn-checkout-quote {
   width: 100%;
-  padding: 1rem;
-  background: var(--accent-amber);
+  padding: 1.05rem 1rem;
+  background: linear-gradient(135deg, #e08a32 0%, #c47223 100%);
   color: #fff;
   border: none;
   border-radius: var(--radius-sm);
   font-weight: 700;
   font-size: 0.95rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   cursor: pointer;
   transition: var(--transition);
-  box-shadow: 0 4px 15px var(--accent-warm-glow);
+  box-shadow: 0 4px 18px var(--accent-warm-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .btn-checkout-quote:hover {
-  background: #c87a2d;
+  background: linear-gradient(135deg, #f0983d 0%, #d47e2b 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(224, 138, 50, 0.45);
+}
+
+.btn-checkout-whatsapp {
+  width: 100%;
+  margin-top: 0.65rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.btn-checkout-whatsapp:hover {
+  background: rgba(37, 211, 102, 0.12);
+  color: #25d366;
+  border-color: #25d366;
 }
 
 /* Toast Notifications */

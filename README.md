@@ -1,6 +1,6 @@
 # Xpero+ | Luxury Handcrafted Lighting & Artisanal Home Decor
 
-A warm, editorial showcase and B2B export platform for **Xpero+**, specializing in artisanal lighting, brass floor lamps, cascading chandeliers, textured ceramics, and ambient light sculptures.
+A warm, editorial showcase and B2B export platform for **Xpero+**, specializing in handcrafted wooden pendant lights, sculptural MDF table lamps, fluid wavy chandeliers, and ambient home decor.
 
 ---
 

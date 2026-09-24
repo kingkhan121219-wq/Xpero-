@@ -44,7 +44,7 @@ const signatureLamps = [
     inrPrice: 2399, // ₹2,399 on Amazon India
     exportFob: "$16 - $22 / unit (MOQ 10) • Amazon Retail: ₹2,399",
     moq: "10 Units",
-    image: "assets/images/lamp-2.jpg",
+    image: "assets/images/lamp-2-spherical.jpg",
     description: "Featured on Amazon (ASIN: B0GJCXWHW5). An exquisite sculptural spherical wooden pendant lamp crafted from premium smooth-finished wood in a fluid, interlocking ribbon design. The open-slat structure evenly diffuses soft, warm white light, creating a comforting, high-end ambiance over dining tables, living rooms, hotel lounges, and cafes. Equipped with a heat-resistant E14 socket, ceiling canopy, and 4W warm LED bulb.",
     specs: {
       "Brand / Model": "XPERO+ • Model ASXZ_865 (ASIN: B0GJCXWHW5)",

@@ -71,7 +71,7 @@ const signatureLamps = [
     inrPrice: 1589, // ₹1,589 on Amazon India
     exportFob: "$10 - $14 / unit (MOQ 15) • Amazon Retail: ₹1,589",
     moq: "15 Units",
-    image: "assets/images/lamp-3.jpg",
+    image: "assets/images/lamp-3-cylindrical.jpg",
     description: "Featured on Amazon (ASIN: B0GHNZ3WMZ). An exquisite cylindrical hanging pendant light crafted from fine MDF wood with undulating wavy vertical slats and an antique brown finish. The open-slat geometry projects captivating vertical light streaks and ambient warmth, ideal for living rooms, dining spaces, cafe tables, and bedrooms. Includes a heat-resistant E27 socket, 4W warm LED bulb, 1.14m adjustable suspension cord, and sturdy black ceiling mount.",
     specs: {
       "Brand / Model": "XPERO+ • Model ASXZ_254 (ASIN: B0GHNZ3WMZ)",
@@ -99,7 +99,7 @@ const signatureLamps = [
     inrPrice: 1499, // ₹1,499 on Amazon India
     exportFob: "$9 - $13 / unit (MOQ 15) • Amazon Retail: ₹1,499",
     moq: "15 Units",
-    image: "assets/images/lamp-4.jpg",
+    image: "assets/images/lamp-4-ribbed.jpg",
     description: "Featured on Amazon (ASIN: B0GC5GKHJM). A striking spherical ribbed hanging pendant light crafted from fine-quality MDF wood with a modern cut-pattern shade and antique brown finish. Casts warm radial patterns and soothing ambient downlight across living rooms, dining tables, cafe counters, and bedrooms. Complete with a heat-resistant E27 holder, 4W warm LED bulb, 1.02m adjustable suspension cord, and black ceiling mount plate.",
     specs: {
       "Brand / Model": "XPERO+ • Model ASXZ_9963 (ASIN: B0GC5GKHJM)",
@@ -127,7 +127,7 @@ const signatureLamps = [
     inrPrice: 1899, // ₹1,899 on Amazon India
     exportFob: "$12 - $16 / unit (MOQ 15) • Amazon Retail: ₹1,899",
     moq: "15 Units",
-    image: "assets/images/lamp-5.jpg",
+    image: "assets/images/lamp-5-tulip.jpg",
     description: "Featured on Amazon (ASIN: B0GK72LC7J). An organic sculptural table lamp crafted from fine Pine MDF wood in a modern tulip-inspired goblet silhouette. Radiates a comforting, warm white ambient uplight that casts mesmerizing geometric shadows across side tables, bedroom bedside stands, study desks, and cafe tables. Comes complete with a 4W E27 energy-efficient LED bulb, corded electric power switch, and stable weighted base.",
     specs: {
       "Brand / Model": "XPERO+ • Model ASX596 (ASIN: B0GK72LC7J)",
@@ -155,7 +155,7 @@ const signatureLamps = [
     inrPrice: 1589, // ₹1,589 on Amazon India
     exportFob: "$10 - $14 / unit (MOQ 15) • Amazon Retail: ₹1,589",
     moq: "15 Units",
-    image: "assets/images/lamp-6.jpg",
+    image: "assets/images/lamp-6-teardrop.jpg",
     description: "Featured on Amazon (ASIN: B0GHN86JTF). An elegant teardrop-shaped hanging ceiling pendant crafted from fine MDF wood with smooth natural antique brown finish and sweeping curved vertical slats. Diffuses soothing warm white light, projecting artistic linear shadows and inviting warmth across dining rooms, bedside spaces, cafes, and living areas. Comes with a heat-resistant E27 socket, 4W warm LED bulb, 1.12m adjustable hanging cord, and durable black ceiling plate.",
     specs: {
       "Brand / Model": "XPERO+ • Model ASXZ_296 (ASIN: B0GHN86JTF)",

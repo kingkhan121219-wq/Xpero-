@@ -9,12 +9,12 @@ A warm, editorial showcase and B2B export platform for **Xpero+**, specializing 
 - **Cozy Ambiance Toggle**: Switch dynamically between natural daylight and warm evening candlelight mode (2400K–2700K).
 - **Interactive Light Dimmer**: Real-time slider simulating warm glow and color temperature in product quick-view modals.
 - **Signature Collection Grid**:
-  1. *Monstera Leaf Sculptural Lamp*
-  2. *Crystal Statement Chandelier*
-  3. *Textured Ceramic Lamp Pair*
-  4. *Ribbed Ceramic Table Lamp*
-  5. *Ambient Sculptural Lamp*
-  6. *Adjustable Candle Warmer Lamp*
+  1. *Decorative Leaf Shape MDF Table Lamp (33 × 40 cm) - Model ASXZ96 / ASIN: B0GC67J113*
+  2. *Spherical Wooden Pendant Lamp (52 × 52 × 33 cm) - Model ASXZ_865 / ASIN: B0GJCXWHW5*
+  3. *Cylindrical Wavy Wooden Pendant (37 × 18 × 37 cm) - Model ASXZ_254 / ASIN: B0GHNZ3WMZ*
+  4. *Spherical Ribbed Wooden Pendant (25 × 20 × 25 cm) - Model ASXZ_9963 / ASIN: B0GC5GKHJM*
+  5. *Artisanal Tulip Wooden Table Lamp (22.5 × 22.5 × 42 cm) - Model ASX596 / ASIN: B0GK72LC7J*
+  6. *Teardrop Slatted Wooden Pendant (28 × 28 × 30.5 cm) - Model ASXZ_296 / ASIN: B0GHN86JTF*
 - **B2B Wholesale & Export Engine**:
   - Interactive quotation cart drawer calculating item counts and CBM estimates.
   - Direct 1-click WhatsApp Export Quotation generator with pre-formatted SKU lists.

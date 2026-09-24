@@ -32,16 +32,20 @@ if (-not $baseDir) {
 }
 
 $mimeTypes = @{
-    ".html" = "text/html; charset=utf-8"
-    ".css"  = "text/css; charset=utf-8"
-    ".js"   = "application/javascript; charset=utf-8"
-    ".jpg"  = "image/jpeg"
-    ".jpeg" = "image/jpeg"
-    ".png"  = "image/png"
-    ".webp" = "image/webp"
-    ".svg"  = "image/svg+xml"
-    ".json" = "application/json"
-    ".ico"  = "image/x-icon"
+    ".html"  = "text/html; charset=utf-8"
+    ".css"   = "text/css; charset=utf-8"
+    ".js"    = "application/javascript; charset=utf-8"
+    ".jpg"   = "image/jpeg"
+    ".jpeg"  = "image/jpeg"
+    ".png"   = "image/png"
+    ".webp"  = "image/webp"
+    ".svg"   = "image/svg+xml"
+    ".json"  = "application/json"
+    ".ico"   = "image/x-icon"
+    ".pdf"   = "application/pdf"
+    ".woff2" = "font/woff2"
+    ".woff"  = "font/woff"
+    ".ttf"   = "font/ttf"
 }
 
 try {
@@ -67,7 +71,9 @@ try {
             try {
                 $bytes = [System.IO.File]::ReadAllBytes($filePath)
                 $response.ContentLength64 = $bytes.Length
-                $response.OutputStream.Write($bytes, 0, $bytes.Length)
+                if ($request.HttpMethod -ne "HEAD") {
+                    $response.OutputStream.Write($bytes, 0, $bytes.Length)
+                }
             } catch {
                 $response.StatusCode = 500
             }

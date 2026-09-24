@@ -23,21 +23,21 @@
   <!-- Top Announcement Bar -->
   <div class="announcement-bar">
     <span class="announce-item primary">🌐 Worldwide Export Delivery to 45+ Countries</span>
-    <span class="announce-item">⚡ <span class="highlight">UL, CE & RoHS Certified</span> (110V / 240V)</span>
-    <span class="announce-item announce-extra">✨ B2B Wholesale & Custom Manufacturing</span>
+    <span class="announce-item">⚡ <span class="highlight">UL, CE &amp; RoHS Certified</span> (110V / 240V)</span>
+    <span class="announce-item announce-extra">✨ B2B Wholesale &amp; Custom Manufacturing</span>
     <span class="announce-item announce-extra">📞 Export Desk: <a href="mailto:export@xperoplus.com" style="text-decoration: underline;">export@xperoplus.com</a></span>
   </div>
 
   <!-- Header / Navigation -->
   <header class="site-header">
     <div class="container navbar">
-      <a href="#" class="brand-logo">
+      <a href="#hero" class="brand-logo">
         <span class="logo-main">Xpero+</span>
-        <span class="logo-sub">Artisanal Lighting & Home Luxuries</span>
+        <span class="logo-sub">Artisanal Lighting &amp; Home Luxuries</span>
       </a>
 
       <nav>
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
           <li><a href="#signature-collection" class="active">Lamps</a></li>
           <li><a href="#craftsmanship">Artisanship</a></li>
           <li><a href="#export-capabilities">Export Standards</a></li>
@@ -59,9 +59,16 @@
         </button>
 
         <!-- Cart / Quote Drawer Button -->
-        <button id="cartBtn" class="cart-inquiry-btn" title="View Quote & Cart">
+        <button id="cartBtn" class="cart-inquiry-btn" title="View Quote &amp; Cart">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
           <span id="cartCountBadge" class="cart-badge-count" style="display: none;">0</span>
+        </button>
+
+        <!-- Mobile Navigation Hamburger Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" title="Menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
         </button>
       </div>
     </div>
@@ -135,7 +142,7 @@
       <!-- Right Visual Column with Circular Hug Badge -->
       <div class="hero-visual-card">
         <div class="hero-image-wrap">
-          <img src="assets/images/hero.jpg" alt="Xpero+ warm cozy living room corner with pleated linen floor lamp" id="heroImage">
+          <img src="assets/images/hero.jpg" alt="Xpero+ decorative leaf shape MDF table lamp with warm ambient glow" id="heroImage">
         </div>
 
         <!-- Floating Warm Hug Badge from Reference -->
@@ -164,10 +171,10 @@
       <!-- The 6-Lamp Grid -->
       <div class="lamps-poster-grid">
 
-        <!-- Lamp 1: Monstera Leaf Sculptural Lamp -->
+        <!-- Lamp 1: Decorative Leaf Shape MDF Table Lamp (Amazon ASIN: B0GC67J113) -->
         <article class="lamp-poster-card" id="card-lamp-1">
           <div class="card-image-box">
-            <img src="assets/images/lamp-1.jpg" alt="Monstera Leaf Sculptural Lamp by Xpero+" loading="lazy">
+            <img src="assets/images/lamp-1.jpg" alt="XPERO+ Decorative Leaf Shape MDF Table Lamp" loading="lazy">
             <div class="warm-halo"></div>
             <div class="card-overlay-actions">
               <button class="btn-overlay-action" onclick="openQuickView(1)">Quick View &amp; Dimmer</button>
@@ -177,20 +184,23 @@
           <div class="card-caption-bar">
             <div class="lamp-number-pill">1</div>
             <div class="lamp-title-wrap">
-              <h3 class="lamp-title">Monstera Leaf Sculptural Lamp</h3>
-              <p class="lamp-export-moq">Layered Birch Wood • MOQ: 15 units</p>
+              <h3 class="lamp-title">Decorative Leaf Shape MDF Table Lamp</h3>
+              <p class="lamp-export-moq">33 × 40 cm • 4W E27 Bulb Included • Fine MDF</p>
             </div>
           </div>
           <div class="card-pricing-row">
-            <span class="price-tag">$195 USD</span>
-            <span class="export-tag">Export FOB Available</span>
+            <span class="price-tag">₹2,219 / $27 USD</span>
+            <a href="https://amzn.in/d/0jknCFlE" target="_blank" rel="noopener noreferrer" class="amazon-badge-link" title="Buy on Amazon India">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M15.93 17.09c-2.68 1.98-6.57 2.4-9.84.81-1.39-.68-2.6-1.74-3.56-3.02-.13-.18-.08-.43.1-.56.17-.12.4-.08.54.09.84 1.13 1.91 2.06 3.14 2.66 2.87 1.39 6.27 1.02 8.62-.71.18-.13.43-.09.56.09.13.18.09.43-.09.56l.53.08zm1.09-2.09c-.23-.29-.91-.14-1.26-.06-.11.02-.13-.08-.03-.15.65-.47 1.72-.34 1.98.01.27.35-.07 1.43-.7 1.92-.09.07-.18.04-.15-.06.12-.34.39-1.37.16-1.66zm5.83 5.4c-1.34 1.05-3.32 1.63-5.38 1.63-3.66 0-6.93-1.84-8.85-4.72-.12-.18-.08-.42.09-.54.17-.12.41-.08.53.1 1.74 2.6 4.69 4.26 8.23 4.26 1.86 0 3.65-.52 4.86-1.47.16-.13.41-.09.54.07.13.17.09.41-.07.54l.05-.07z"/></svg>
+              <span>Amazon.in</span> ↗
+            </a>
           </div>
         </article>
 
-        <!-- Lamp 2: Crystal Statement Chandelier -->
+        <!-- Lamp 2: Spherical Wooden Pendant Lamp (Amazon ASIN: B0GJCXWHW5) -->
         <article class="lamp-poster-card" id="card-lamp-2">
           <div class="card-image-box">
-            <img src="assets/images/lamp-2.jpg" alt="Crystal Statement Chandelier by Xpero+" loading="lazy">
+            <img src="assets/images/lamp-2.jpg" alt="XPERO+ Spherical Wooden Pendant Lamp" loading="lazy">
             <div class="warm-halo"></div>
             <div class="card-overlay-actions">
               <button class="btn-overlay-action" onclick="openQuickView(2)">Quick View &amp; Dimmer</button>
@@ -200,20 +210,23 @@
           <div class="card-caption-bar">
             <div class="lamp-number-pill">2</div>
             <div class="lamp-title-wrap">
-              <h3 class="lamp-title">Crystal Statement Chandelier</h3>
-              <p class="lamp-export-moq">Multi-Tier K9 Prisms • MOQ: 5 units</p>
+              <h3 class="lamp-title">Spherical Wooden Pendant Lamp</h3>
+              <p class="lamp-export-moq">52 × 52 × 33 cm • E14 4W Bulb Included • Ceiling Mount</p>
             </div>
           </div>
           <div class="card-pricing-row">
-            <span class="price-tag">$849 USD</span>
-            <span class="export-tag">Export FOB Available</span>
+            <span class="price-tag">₹2,399 / $29 USD</span>
+            <a href="https://amzn.in/d/0bb2YuIl" target="_blank" rel="noopener noreferrer" class="amazon-badge-link" title="Buy on Amazon India">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M15.93 17.09c-2.68 1.98-6.57 2.4-9.84.81-1.39-.68-2.6-1.74-3.56-3.02-.13-.18-.08-.43.1-.56.17-.12.4-.08.54.09.84 1.13 1.91 2.06 3.14 2.66 2.87 1.39 6.27 1.02 8.62-.71.18-.13.43-.09.56.09.13.18.09.43-.09.56l.53.08zm1.09-2.09c-.23-.29-.91-.14-1.26-.06-.11.02-.13-.08-.03-.15.65-.47 1.72-.34 1.98.01.27.35-.07 1.43-.7 1.92-.09.07-.18.04-.15-.06.12-.34.39-1.37.16-1.66zm5.83 5.4c-1.34 1.05-3.32 1.63-5.38 1.63-3.66 0-6.93-1.84-8.85-4.72-.12-.18-.08-.42.09-.54.17-.12.41-.08.53.1 1.74 2.6 4.69 4.26 8.23 4.26 1.86 0 3.65-.52 4.86-1.47.16-.13.41-.09.54.07.13.17.09.41-.07.54l.05-.07z"/></svg>
+              <span>Amazon.in</span> ↗
+            </a>
           </div>
         </article>
 
-        <!-- Lamp 3: Textured Ceramic Lamp Pair -->
+        <!-- Lamp 3: Cylindrical Wavy Wooden Pendant (Amazon ASIN: B0GHNZ3WMZ) -->
         <article class="lamp-poster-card" id="card-lamp-3">
           <div class="card-image-box">
-            <img src="assets/images/lamp-3.jpg" alt="Textured Ceramic Lamp Pair by Xpero+" loading="lazy">
+            <img src="assets/images/lamp-3.jpg" alt="XPERO+ Cylindrical Wavy Wooden Pendant" loading="lazy">
             <div class="warm-halo"></div>
             <div class="card-overlay-actions">
               <button class="btn-overlay-action" onclick="openQuickView(3)">Quick View &amp; Dimmer</button>
@@ -223,20 +236,23 @@
           <div class="card-caption-bar">
             <div class="lamp-number-pill">3</div>
             <div class="lamp-title-wrap">
-              <h3 class="lamp-title">Textured Ceramic Lamp Pair</h3>
-              <p class="lamp-export-moq">Stoneware Set of 2 • MOQ: 15 pairs</p>
+              <h3 class="lamp-title">Cylindrical Wavy Wooden Pendant</h3>
+              <p class="lamp-export-moq">37 × 18 × 37 cm • E27 4W Bulb Included • 1.14m Cord</p>
             </div>
           </div>
           <div class="card-pricing-row">
-            <span class="price-tag">$320 USD <small>(Pair)</small></span>
-            <span class="export-tag">Export FOB Available</span>
+            <span class="price-tag">₹1,589 / $19 USD</span>
+            <a href="https://amzn.in/d/0jajNNNz" target="_blank" rel="noopener noreferrer" class="amazon-badge-link" title="Buy on Amazon India">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M15.93 17.09c-2.68 1.98-6.57 2.4-9.84.81-1.39-.68-2.6-1.74-3.56-3.02-.13-.18-.08-.43.1-.56.17-.12.4-.08.54.09.84 1.13 1.91 2.06 3.14 2.66 2.87 1.39 6.27 1.02 8.62-.71.18-.13.43-.09.56.09.13.18.09.43-.09.56l.53.08zm1.09-2.09c-.23-.29-.91-.14-1.26-.06-.11.02-.13-.08-.03-.15.65-.47 1.72-.34 1.98.01.27.35-.07 1.43-.7 1.92-.09.07-.18.04-.15-.06.12-.34.39-1.37.16-1.66zm5.83 5.4c-1.34 1.05-3.32 1.63-5.38 1.63-3.66 0-6.93-1.84-8.85-4.72-.12-.18-.08-.42.09-.54.17-.12.41-.08.53.1 1.74 2.6 4.69 4.26 8.23 4.26 1.86 0 3.65-.52 4.86-1.47.16-.13.41-.09.54.07.13.17.09.41-.07.54l.05-.07z"/></svg>
+              <span>Amazon.in</span> ↗
+            </a>
           </div>
         </article>
 
-        <!-- Lamp 4: Ribbed Ceramic Table Lamp -->
+        <!-- Lamp 4: Spherical Ribbed Wooden Pendant (Amazon ASIN: B0GC5GKHJM) -->
         <article class="lamp-poster-card" id="card-lamp-4">
           <div class="card-image-box">
-            <img src="assets/images/lamp-4.jpg" alt="Ribbed Ceramic Table Lamp by Xpero+" loading="lazy">
+            <img src="assets/images/lamp-4.jpg" alt="XPERO+ Spherical Ribbed Wooden Pendant" loading="lazy">
             <div class="warm-halo"></div>
             <div class="card-overlay-actions">
               <button class="btn-overlay-action" onclick="openQuickView(4)">Quick View &amp; Dimmer</button>
@@ -246,20 +262,23 @@
           <div class="card-caption-bar">
             <div class="lamp-number-pill">4</div>
             <div class="lamp-title-wrap">
-              <h3 class="lamp-title">Ribbed Ceramic Table Lamp</h3>
-              <p class="lamp-export-moq">Fluted Base &amp; Drum • MOQ: 20 units</p>
+              <h3 class="lamp-title">Spherical Ribbed Wooden Pendant</h3>
+              <p class="lamp-export-moq">25 × 20 × 25 cm • E27 4W Bulb Included • 1.02m Cord</p>
             </div>
           </div>
           <div class="card-pricing-row">
-            <span class="price-tag">$165 USD</span>
-            <span class="export-tag">Export FOB Available</span>
+            <span class="price-tag">₹1,499 / $18 USD</span>
+            <a href="https://amzn.in/d/0baG7P7l" target="_blank" rel="noopener noreferrer" class="amazon-badge-link" title="Buy on Amazon India">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M15.93 17.09c-2.68 1.98-6.57 2.4-9.84.81-1.39-.68-2.6-1.74-3.56-3.02-.13-.18-.08-.43.1-.56.17-.12.4-.08.54.09.84 1.13 1.91 2.06 3.14 2.66 2.87 1.39 6.27 1.02 8.62-.71.18-.13.43-.09.56.09.13.18.09.43-.09.56l.53.08zm1.09-2.09c-.23-.29-.91-.14-1.26-.06-.11.02-.13-.08-.03-.15.65-.47 1.72-.34 1.98.01.27.35-.07 1.43-.7 1.92-.09.07-.18.04-.15-.06.12-.34.39-1.37.16-1.66zm5.83 5.4c-1.34 1.05-3.32 1.63-5.38 1.63-3.66 0-6.93-1.84-8.85-4.72-.12-.18-.08-.42.09-.54.17-.12.41-.08.53.1 1.74 2.6 4.69 4.26 8.23 4.26 1.86 0 3.65-.52 4.86-1.47.16-.13.41-.09.54.07.13.17.09.41-.07.54l.05-.07z"/></svg>
+              <span>Amazon.in</span> ↗
+            </a>
           </div>
         </article>
 
-        <!-- Lamp 5: Ambient Sculptural Lamp -->
+        <!-- Lamp 5: Artisanal Tulip Wooden Table Lamp (Amazon ASIN: B0GK72LC7J) -->
         <article class="lamp-poster-card" id="card-lamp-5">
           <div class="card-image-box">
-            <img src="assets/images/lamp-5.jpg" alt="Ambient Sculptural Lamp by Xpero+" loading="lazy">
+            <img src="assets/images/lamp-5.jpg" alt="XPERO+ Artisanal Tulip Wooden Table Lamp" loading="lazy">
             <div class="warm-halo"></div>
             <div class="card-overlay-actions">
               <button class="btn-overlay-action" onclick="openQuickView(5)">Quick View &amp; Dimmer</button>
@@ -269,20 +288,23 @@
           <div class="card-caption-bar">
             <div class="lamp-number-pill">5</div>
             <div class="lamp-title-wrap">
-              <h3 class="lamp-title">Ambient Sculptural Lamp</h3>
-              <p class="lamp-export-moq">Twisted Spiral Core • MOQ: 15 units</p>
+              <h3 class="lamp-title">Artisanal Tulip Wooden Table Lamp</h3>
+              <p class="lamp-export-moq">22.5 × 22.5 × 42 cm • E27 4W Bulb Included • Tabletop</p>
             </div>
           </div>
           <div class="card-pricing-row">
-            <span class="price-tag">$210 USD</span>
-            <span class="export-tag">Export FOB Available</span>
+            <span class="price-tag">₹1,899 / $23 USD</span>
+            <a href="https://amzn.in/d/0f9HJvLJ" target="_blank" rel="noopener noreferrer" class="amazon-badge-link" title="Buy on Amazon India">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M15.93 17.09c-2.68 1.98-6.57 2.4-9.84.81-1.39-.68-2.6-1.74-3.56-3.02-.13-.18-.08-.43.1-.56.17-.12.4-.08.54.09.84 1.13 1.91 2.06 3.14 2.66 2.87 1.39 6.27 1.02 8.62-.71.18-.13.43-.09.56.09.13.18.09.43-.09.56l.53.08zm1.09-2.09c-.23-.29-.91-.14-1.26-.06-.11.02-.13-.08-.03-.15.65-.47 1.72-.34 1.98.01.27.35-.07 1.43-.7 1.92-.09.07-.18.04-.15-.06.12-.34.39-1.37.16-1.66zm5.83 5.4c-1.34 1.05-3.32 1.63-5.38 1.63-3.66 0-6.93-1.84-8.85-4.72-.12-.18-.08-.42.09-.54.17-.12.41-.08.53.1 1.74 2.6 4.69 4.26 8.23 4.26 1.86 0 3.65-.52 4.86-1.47.16-.13.41-.09.54.07.13.17.09.41-.07.54l.05-.07z"/></svg>
+              <span>Amazon.in</span> ↗
+            </a>
           </div>
         </article>
 
-        <!-- Lamp 6: Adjustable Candle Warmer Lamp -->
+        <!-- Lamp 6: Teardrop Slatted Wooden Pendant (Amazon ASIN: B0GHN86JTF) -->
         <article class="lamp-poster-card" id="card-lamp-6">
           <div class="card-image-box">
-            <img src="assets/images/lamp-6.jpg" alt="Adjustable Candle Warmer Lamp by Xpero+" loading="lazy">
+            <img src="assets/images/lamp-6.jpg" alt="XPERO+ Teardrop Slatted Wooden Pendant" loading="lazy">
             <div class="warm-halo"></div>
             <div class="card-overlay-actions">
               <button class="btn-overlay-action" onclick="openQuickView(6)">Quick View &amp; Dimmer</button>
@@ -292,13 +314,16 @@
           <div class="card-caption-bar">
             <div class="lamp-number-pill">6</div>
             <div class="lamp-title-wrap">
-              <h3 class="lamp-title">Adjustable Candle Warmer Lamp</h3>
-              <p class="lamp-export-moq">Carrara Marble Base • MOQ: 25 units</p>
+              <h3 class="lamp-title">Teardrop Slatted Wooden Pendant</h3>
+              <p class="lamp-export-moq">28 × 28 × 30.5 cm • E27 4W Bulb Included • 1.12m Cord</p>
             </div>
           </div>
           <div class="card-pricing-row">
-            <span class="price-tag">$125 USD</span>
-            <span class="export-tag">Export FOB Available</span>
+            <span class="price-tag">₹1,589 / $19 USD</span>
+            <a href="https://amzn.in/d/0eo1vlnf" target="_blank" rel="noopener noreferrer" class="amazon-badge-link" title="Buy on Amazon India">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M15.93 17.09c-2.68 1.98-6.57 2.4-9.84.81-1.39-.68-2.6-1.74-3.56-3.02-.13-.18-.08-.43.1-.56.17-.12.4-.08.54.09.84 1.13 1.91 2.06 3.14 2.66 2.87 1.39 6.27 1.02 8.62-.71.18-.13.43-.09.56.09.13.18.09.43-.09.56l.53.08zm1.09-2.09c-.23-.29-.91-.14-1.26-.06-.11.02-.13-.08-.03-.15.65-.47 1.72-.34 1.98.01.27.35-.07 1.43-.7 1.92-.09.07-.18.04-.15-.06.12-.34.39-1.37.16-1.66zm5.83 5.4c-1.34 1.05-3.32 1.63-5.38 1.63-3.66 0-6.93-1.84-8.85-4.72-.12-.18-.08-.42.09-.54.17-.12.41-.08.53.1 1.74 2.6 4.69 4.26 8.23 4.26 1.86 0 3.65-.52 4.86-1.47.16-.13.41-.09.54.07.13.17.09.41-.07.54l.05-.07z"/></svg>
+              <span>Amazon.in</span> ↗
+            </a>
           </div>
         </article>
 
@@ -404,7 +429,7 @@
           </ul>
 
           <div class="rfq-direct-links">
-            <a href="https://api.whatsapp.com/send?phone=919876543210&text=Hello%20Xpero%2B%20team,%20I%20am%20interested%20in%20your%20signature%20lamps%20for%20export/wholesale." target="_blank" class="btn-whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=919876543210&amp;text=Hello%20Xpero%2B%20team,%20I%20am%20interested%20in%20your%20signature%20lamps%20for%20export/wholesale." target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.44 0-2.85-.38-4.08-1.1l-.29-.17-3.04.8 1.05-2.96-.19-.3A8.15 8.15 0 0 1 3.8 11.91c0-4.54 3.7-8.24 8.25-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"/></svg>
               Chat on WhatsApp Export Desk
             </a>
@@ -436,12 +461,12 @@
             <label for="rfqInterest">Primary Lamp of Interest</label>
             <select id="rfqInterest" name="lamp_interest">
               <option value="All Lamps (Curated Collection)">All Signature Lamps (Complete Set)</option>
-              <option value="Lamp 1: Monstera Leaf Sculptural Lamp">1. Monstera Leaf Sculptural Lamp</option>
-              <option value="Lamp 2: Crystal Statement Chandelier">2. Crystal Statement Chandelier</option>
-              <option value="Lamp 3: Textured Ceramic Lamp Pair">3. Textured Ceramic Lamp Pair</option>
-              <option value="Lamp 4: Ribbed Ceramic Table Lamp">4. Ribbed Ceramic Table Lamp</option>
-              <option value="Lamp 5: Ambient Sculptural Lamp">5. Ambient Sculptural Lamp</option>
-              <option value="Lamp 6: Candle Warmer Lamp">6. Adjustable Candle Warmer Lamp</option>
+              <option value="Lamp 1: Decorative Leaf Shape MDF Table Lamp">1. Decorative Leaf Shape MDF Table Lamp (33 × 40 cm)</option>
+              <option value="Lamp 2: Spherical Wooden Pendant Lamp">2. Spherical Wooden Pendant Lamp (52 × 52 × 33 cm)</option>
+              <option value="Lamp 3: Cylindrical Wavy Wooden Pendant">3. Cylindrical Wavy Wooden Pendant (37 × 18 × 37 cm)</option>
+              <option value="Lamp 4: Spherical Ribbed Wooden Pendant">4. Spherical Ribbed Wooden Pendant (25 × 20 × 25 cm)</option>
+              <option value="Lamp 5: Artisanal Tulip Wooden Table Lamp">5. Artisanal Tulip Wooden Table Lamp (22.5 × 22.5 × 42 cm)</option>
+              <option value="Lamp 6: Teardrop Slatted Wooden Pendant">6. Teardrop Slatted Wooden Pendant (28 × 28 × 30.5 cm)</option>
             </select>
           </div>
 
@@ -482,12 +507,12 @@
         <div class="footer-col">
           <h4>Signature Lamps</h4>
           <ul class="footer-links">
-            <li><a href="#signature-collection" onclick="openQuickView(1)">1. Monstera Leaf Sculptural Lamp</a></li>
-            <li><a href="#signature-collection" onclick="openQuickView(2)">2. Crystal Statement Chandelier</a></li>
-            <li><a href="#signature-collection" onclick="openQuickView(3)">3. Textured Ceramic Lamp Pair</a></li>
-            <li><a href="#signature-collection" onclick="openQuickView(4)">4. Ribbed Ceramic Table Lamp</a></li>
-            <li><a href="#signature-collection" onclick="openQuickView(5)">5. Ambient Sculptural Lamp</a></li>
-            <li><a href="#signature-collection" onclick="openQuickView(6)">6. Candle Warmer Lamp</a></li>
+            <li><a href="#signature-collection" onclick="openQuickView(1)">1. Decorative Leaf Shape MDF Table Lamp</a></li>
+            <li><a href="#signature-collection" onclick="openQuickView(2)">2. Spherical Wooden Pendant Lamp</a></li>
+            <li><a href="#signature-collection" onclick="openQuickView(3)">3. Cylindrical Wavy Wooden Pendant</a></li>
+            <li><a href="#signature-collection" onclick="openQuickView(4)">4. Spherical Ribbed Wooden Pendant</a></li>
+            <li><a href="#signature-collection" onclick="openQuickView(5)">5. Artisanal Tulip Wooden Table Lamp</a></li>
+            <li><a href="#signature-collection" onclick="openQuickView(6)">6. Teardrop Slatted Wooden Pendant</a></li>
           </ul>
         </div>
 
@@ -540,14 +565,14 @@
 
       <div class="modal-product-details">
         <span class="modal-product-number" id="modalProductNumber">Piece No. 1 of 6</span>
-        <h3 class="modal-product-title" id="modalProductTitle">Pleated Linen Floor Lamp</h3>
+        <h3 class="modal-product-title" id="modalProductTitle">Decorative Leaf Shape MDF Table Lamp (33 × 40 cm)</h3>
         <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;" id="modalProductTagline">
-          Arched Solid Brass Stem &amp; Fluted Cream Linen Conical Shade
+          Fine MDF Wood Leaf Silhouette • 4W E27 Bulb Included • Moradabad Handicraft
         </p>
 
         <div class="modal-pricing-box">
-          <span class="modal-retail-price" id="modalProductRetail">$289 USD</span>
-          <span class="modal-export-fob" id="modalProductExport">Export FOB: $145 - $165 / unit (MOQ 10)</span>
+          <span class="modal-retail-price" id="modalProductRetail">₹2,219 INR ($27 USD)</span>
+          <span class="modal-export-fob" id="modalProductExport">Export FOB: $14 - $18 / unit (MOQ 15)</span>
         </div>
 
         <!-- Interactive Color Temperature / Dimmer Simulator -->
@@ -575,6 +600,7 @@
         </table>
 
         <div class="modal-action-buttons">
+          <div id="modalAmazonLinkContainer"></div>
           <button class="btn-add-quote" id="btnModalAddQuote">+ Add to Order / Quote</button>
         </div>
       </div>

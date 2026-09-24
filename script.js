@@ -7,127 +7,183 @@ const signatureLamps = [
   {
     id: 1,
     number: "1",
-    name: "Monstera Leaf Sculptural Lamp",
-    tagline: "Layered Natural Birch Leaves & Sculpted Wood Fin Base",
-    price: 195,
-    exportFob: "$85 - $110 / unit (MOQ 15)",
+    name: "Decorative Leaf Shape MDF Table Lamp (33 × 40 cm)",
+    shortName: "Decorative Leaf Shape Table Lamp",
+    model: "ASXZ96",
+    asin: "B0GC67J113",
+    amazonUrl: "https://amzn.in/d/0jknCFlE",
+    tagline: "Fine MDF Leaf-Layered Silhouette • 4W E27 Bulb Included • Moradabad Handicraft",
+    price: 27, // ~$27 USD
+    inrPrice: 2219, // ₹2,219 on Amazon India
+    exportFob: "$14 - $18 / unit (MOQ 15) • Amazon Retail: ₹2,219",
     moq: "15 Units",
     image: "assets/images/lamp-1.jpg",
-    description: "An organic biophilic light sculpture inspired by tropical monstera foliage. Precision-sculpted wooden leaves diffuse glowing warm ambient light from within, casting mesmerizing botanical light and shadow silhouettes across tabletops.",
+    description: "Featured on Amazon (ASIN: B0GC67J113). An elegant decorative table lamp crafted from premium fine MDF wood with a biophilic leaf-layered structure and flared fluted base. Emits a soft, soothing warm white ambient glow that casts mesmerizing botanical leaf shadows across bedrooms, living rooms, center tables, and cafes. Completely ready to use with an energy-efficient 4W E27 warm LED bulb, sturdy table stand, and corded push-button switch included.",
     specs: {
-      "Dimensions": "H: 52cm × Dia: 38cm (Base Dia: 26cm)",
-      "Materials": "Laser-Sculpted Birch Wood Veneer, Natural Walnut Core",
-      "Bulb / Socket": "E26 / E27 Warm LED Edison (Included)",
-      "Color Temp": "2700K Soft Amber (Inline Rotary Dimmer)",
-      "Voltage / Plug": "110V - 240V Multi-Market UL/CE/RoHS Compliant",
-      "Packaging": "Double-wall export master carton (ISTA 3A drop tested)",
-      "Gross Weight": "4.2 kg | 0.048 CBM"
+      "Brand / Model": "XPERO+ • Model ASXZ96 (ASIN: B0GC67J113)",
+      "Dimensions": "33 cm (Dia) × 40 cm (Height)",
+      "Materials": "Premium Fine MDF Wood & Engineered Metal Accents",
+      "Bulb & Socket": "E27 Standard Base • 4W Warm LED Bulb Included",
+      "Color & Finish": "Natural Wood Brown (Warm White 2700K Ambient Glow)",
+      "Switch / Control": "Corded Electric with Push Button Switch (Plug & Play)",
+      "Item Weight": "1,493 Grams (1.49 kg)",
+      "Application": "Bedroom Bedside, Living Room, Office Desk, Cafe Decor",
+      "Origin": "Handcrafted by XPERO+, Moradabad, Uttar Pradesh, India"
     }
   },
   {
     id: 2,
     number: "2",
-    name: "Crystal Statement Chandelier",
-    tagline: "Hand-Cut Multi-Tier K9 Crystal & Brushed Champagne Gold Ring",
-    price: 849,
-    exportFob: "$420 - $480 / unit (MOQ 5)",
-    moq: "5 Units",
+    name: "Spherical Wooden Pendant Lamp (52 × 52 × 33 cm)",
+    shortName: "Spherical Wooden Pendant Lamp",
+    model: "ASXZ_865",
+    asin: "B0GJCXWHW5",
+    amazonUrl: "https://amzn.in/d/0bb2YuIl",
+    tagline: "Sweeping Interlocking Wood Ribbons • E14 4W Bulb Included • Ceiling Pendant",
+    price: 29, // ~$29 USD
+    inrPrice: 2399, // ₹2,399 on Amazon India
+    exportFob: "$16 - $22 / unit (MOQ 10) • Amazon Retail: ₹2,399",
+    moq: "10 Units",
     image: "assets/images/lamp-2.jpg",
-    description: "Architectural grandeur meets intimate warmth. Hundreds of precision-faceted K9 optical crystal prisms refract light into hypnotic golden patterns across dining rooms, foyers, and hospitality suites.",
+    description: "Featured on Amazon (ASIN: B0GJCXWHW5). An exquisite sculptural spherical wooden pendant lamp crafted from premium smooth-finished wood in a fluid, interlocking ribbon design. The open-slat structure evenly diffuses soft, warm white light, creating a comforting, high-end ambiance over dining tables, living rooms, hotel lounges, and cafes. Equipped with a heat-resistant E14 socket, ceiling canopy, and 4W warm LED bulb.",
     specs: {
-      "Dimensions": "Dia: 90cm × H: 80cm (Adjustable 150cm brass chain)",
-      "Materials": "Optic Grade K9 Crystal, Forged Steel & Brushed Gold",
-      "Bulb / Socket": "12 × E12 / E14 Dimmable LED Warm Glow",
-      "Color Temp": "2700K - 3000K Architectural Warmth",
-      "Voltage / Plug": "110V - 240V Certified for US / UK / EU / GCC",
-      "Packaging": "Custom high-density molded EPE foam & reinforced crate",
-      "Gross Weight": "24.8 kg | 0.165 CBM"
+      "Brand / Model": "XPERO+ • Model ASXZ_865 (ASIN: B0GJCXWHW5)",
+      "Dimensions": "52 cm (L) × 52 cm (W) × 33 cm (H)",
+      "Materials": "Premium Smooth Finished Wood & Powder-Coated Metal",
+      "Bulb & Socket": "E14 Standard Base • 4W Warm LED Bulb Included",
+      "Color & Finish": "Natural Wood Brown (Warm White Ambient Downlight)",
+      "Mounting Type": "Ceiling Mount Pendant with Heat-Resistant Canopy",
+      "Item Weight": "1,480 Grams (1.48 kg)",
+      "Application": "Dining Table Centerpiece, Living Room, Hotel & Cafe Decor",
+      "Origin": "Handcrafted by XPERO+, Moradabad, Uttar Pradesh, India"
     }
   },
   {
     id: 3,
     number: "3",
-    name: "Textured Ceramic Lamp Pair",
-    tagline: "Hand-Turned Ribbed Earthenware & Textured Linen Drums (Set of 2)",
-    price: 320,
-    exportFob: "$160 - $185 / pair (MOQ 15 pairs)",
-    moq: "15 Pairs",
+    name: "Cylindrical Wavy Wooden Pendant",
+    shortName: "Cylindrical Wavy Wooden Pendant",
+    model: "ASXZ_254",
+    asin: "B0GHNZ3WMZ",
+    amazonUrl: "https://amzn.in/d/0jajNNNz",
+    tagline: "Fine MDF Undulating Wood Slats • E27 4W Bulb Included • 1.14m Adjustable Cord",
+    price: 19, // ~$19 USD
+    inrPrice: 1589, // ₹1,589 on Amazon India
+    exportFob: "$10 - $14 / unit (MOQ 15) • Amazon Retail: ₹1,589",
+    moq: "15 Units",
     image: "assets/images/lamp-3.jpg",
-    description: "Sculpted by master ceramicists using natural stoneware clay with subtle fluted ridging. Paired symmetrically on consoles or credenzas to establish serene, balanced ambient illumination.",
+    description: "Featured on Amazon (ASIN: B0GHNZ3WMZ). An exquisite cylindrical hanging pendant light crafted from fine MDF wood with undulating wavy vertical slats and an antique brown finish. The open-slat geometry projects captivating vertical light streaks and ambient warmth, ideal for living rooms, dining spaces, cafe tables, and bedrooms. Includes a heat-resistant E27 socket, 4W warm LED bulb, 1.14m adjustable suspension cord, and sturdy black ceiling mount.",
     specs: {
-      "Dimensions": "H: 62cm × Dia: 36cm (Each)",
-      "Materials": "Artisanal Textured Stoneware, Oatmeal Linen Drum",
-      "Bulb / Socket": "2 × E26 / E27 Medium Base",
-      "Color Temp": "2700K Warm Glow with rotary brass dimmer",
-      "Voltage / Plug": "Custom cord wiring & plug type per export market",
-      "Packaging": "Individual nested inner boxes inside palletized carton",
-      "Gross Weight": "9.2 kg (Pair) | 0.095 CBM"
+      "Brand / Model": "XPERO+ • Model ASXZ_254 (ASIN: B0GHNZ3WMZ)",
+      "Dimensions": "37 cm (L) × 18 cm (W) × 37 cm (H)",
+      "Materials": "Premium Fine MDF Wood & Powder-Coated Metal Hardware",
+      "Bulb & Socket": "E27 Universal Base • 4W Warm LED Bulb Included",
+      "Hanging Cord": "1.14 Meter Adjustable Cord for Custom Drop Heights",
+      "Color & Finish": "Antique Brown Wood (Warm White 2700K Ambient Downlight)",
+      "Mounting Type": "Ceiling Mount / Flush Mount with Black Canopy Plate",
+      "Item Weight": "470 Grams",
+      "Application": "Living Room, Dining Area, Bedroom, Cafe, Restaurant, Hotel Decor",
+      "Origin": "Handcrafted by XPERO+, Moradabad, Uttar Pradesh, India"
     }
   },
   {
     id: 4,
     number: "4",
-    name: "Ribbed Ceramic Table Lamp",
-    tagline: "Artisan Ivory Glaze & Natural Oatmeal Fabric Shade",
-    price: 165,
-    exportFob: "$78 - $92 / unit (MOQ 20)",
-    moq: "20 Units",
+    name: "Spherical Ribbed Wooden Pendant",
+    shortName: "Spherical Ribbed Wooden Pendant",
+    model: "ASXZ_9963",
+    asin: "B0GC5GKHJM",
+    amazonUrl: "https://amzn.in/d/0baG7P7l",
+    tagline: "Fine MDF Modern Cut-Pattern Shade • E27 4W Bulb Included • 1.02m Adjustable Cord",
+    price: 18, // ~$18 USD
+    inrPrice: 1499, // ₹1,499 on Amazon India
+    exportFob: "$9 - $13 / unit (MOQ 15) • Amazon Retail: ₹1,499",
+    moq: "15 Units",
     image: "assets/images/lamp-4.jpg",
-    description: "An intimate bedside or entryway companion. Features a tactile ribbed ceramic base with warm tactile ivory glaze, paired with an oatmeal fabric shade that diffuses overhead glare into comforting warmth.",
+    description: "Featured on Amazon (ASIN: B0GC5GKHJM). A striking spherical ribbed hanging pendant light crafted from fine-quality MDF wood with a modern cut-pattern shade and antique brown finish. Casts warm radial patterns and soothing ambient downlight across living rooms, dining tables, cafe counters, and bedrooms. Complete with a heat-resistant E27 holder, 4W warm LED bulb, 1.02m adjustable suspension cord, and black ceiling mount plate.",
     specs: {
-      "Dimensions": "H: 52cm × Dia: 32cm",
-      "Materials": "Matte Ribbed Ceramic, Linen Fabric, Brass Fittings",
-      "Bulb / Socket": "E26 / E27 Max 60W Equivalent LED",
-      "Color Temp": "2700K Warm White (3-Way Touch Dimming)",
-      "Voltage / Plug": "Universal 110V - 240V Adapter Available",
-      "Packaging": "Reinforced 5-ply export carton",
-      "Gross Weight": "4.8 kg | 0.045 CBM"
+      "Brand / Model": "XPERO+ • Model ASXZ_9963 (ASIN: B0GC5GKHJM)",
+      "Dimensions": "25 cm (L) × 20 cm (W) × 25 cm (H)",
+      "Materials": "Premium Fine MDF Wood & Powder-Coated Metal Hardware",
+      "Bulb & Socket": "E27 Standard Base • 4W Warm LED Bulb Included",
+      "Hanging Cord": "1.02 Meter Adjustable Cord for Custom Drop Heights",
+      "Color & Finish": "Antique Brown Wood (Warm White 2700K Ambient Downlight)",
+      "Mounting Type": "Ceiling Mount / Flush Mount with Canopy Plate",
+      "Item Weight": "450 Grams",
+      "Application": "Living Room, Dining Area, Bedroom, Cafe, Restaurant, Kitchen Bar",
+      "Origin": "Handcrafted by XPERO+, Moradabad, Uttar Pradesh, India"
     }
   },
   {
     id: 5,
     number: "5",
-    name: "Ambient Sculptural Lamp",
-    tagline: "Organic Twisted Swirl Spiral Illuminating Light Sculpture",
-    price: 210,
-    exportFob: "$105 - $120 / unit (MOQ 15)",
+    name: "Artisanal Tulip Wooden Table Lamp",
+    shortName: "Artisanal Tulip Wooden Table Lamp",
+    model: "ASX596",
+    asin: "B0GK72LC7J",
+    amazonUrl: "https://amzn.in/d/0f9HJvLJ",
+    tagline: "Pine MDF Sculptural Goblet Shade • E27 4W Bulb Included • Tabletop Night Lamp",
+    price: 23, // ~$23 USD
+    inrPrice: 1899, // ₹1,899 on Amazon India
+    exportFob: "$12 - $16 / unit (MOQ 15) • Amazon Retail: ₹1,899",
     moq: "15 Units",
     image: "assets/images/lamp-5.jpg",
-    description: "A conversation-starting sculptural masterpiece. The biophilic twisted spiral silhouette conceals an internal 360-degree LED core that radiates an ethereal flame-like ambient glow across tabletops.",
+    description: "Featured on Amazon (ASIN: B0GK72LC7J). An organic sculptural table lamp crafted from fine Pine MDF wood in a modern tulip-inspired goblet silhouette. Radiates a comforting, warm white ambient uplight that casts mesmerizing geometric shadows across side tables, bedroom bedside stands, study desks, and cafe tables. Comes complete with a 4W E27 energy-efficient LED bulb, corded electric power switch, and stable weighted base.",
     specs: {
-      "Dimensions": "H: 48cm × Dia: 24cm",
-      "Materials": "Textured Mineral Polymer Composite, Anodized Base",
-      "Bulb / Socket": "Integrated Long-Life Epistar LED Ribbon (50,000 hrs)",
-      "Color Temp": "Stepless 2200K - 3200K Magnetic Slider",
-      "Voltage / Plug": "USB-C Rechargeable + Direct AC Plug Option",
-      "Packaging": "Velvet protective slipcase & shock-absorbing box",
-      "Gross Weight": "3.6 kg | 0.038 CBM"
+      "Brand / Model": "XPERO+ • Model ASX596 (ASIN: B0GK72LC7J)",
+      "Dimensions": "22.5 cm (Dia) × 42 cm (Height)",
+      "Materials": "High-Quality Pine MDF Wood & Powder-Coated Metal Hardware",
+      "Bulb & Socket": "E27 Universal Base • 4W Warm LED Bulb Included",
+      "Lighting Method": "Uplight Ambient Warm Glow (2700K Warm White)",
+      "Switch / Control": "Corded Electric with Push Button Switch (Plug & Play)",
+      "Item Weight": "855 Grams",
+      "Mounting Type": "Tabletop / Desk Stand",
+      "Application": "Bedside Night Lamp, Office Desk, Center Table, Living Room & Cafe Decor",
+      "Origin": "Handcrafted by XPERO+, Moradabad, Uttar Pradesh, India"
     }
   },
   {
     id: 6,
     number: "6",
-    name: "Adjustable Candle Warmer Lamp",
-    tagline: "Vintage Brushed Brass Neck, White Bell Shade & Italian Marble Base",
-    price: 125,
-    exportFob: "$58 - $68 / unit (MOQ 25)",
-    moq: "25 Units",
+    name: "Teardrop Slatted Wooden Pendant",
+    shortName: "Teardrop Slatted Wooden Pendant",
+    model: "ASXZ_296",
+    asin: "B0GHN86JTF",
+    amazonUrl: "https://amzn.in/d/0eo1vlnf",
+    tagline: "Fine MDF Contoured Wood Drop • E27 4W Bulb Included • 1.12m Adjustable Cord",
+    price: 19, // ~$19 USD
+    inrPrice: 1589, // ₹1,589 on Amazon India
+    exportFob: "$10 - $14 / unit (MOQ 15) • Amazon Retail: ₹1,589",
+    moq: "15 Units",
     image: "assets/images/lamp-6.jpg",
-    description: "The modern, flame-free way to enjoy home fragrances while enjoying soothing bedtime light. Gentle downward halogen heat warms scented candles cleanly, releasing fragrance without open flame or soot.",
+    description: "Featured on Amazon (ASIN: B0GHN86JTF). An elegant teardrop-shaped hanging ceiling pendant crafted from fine MDF wood with smooth natural antique brown finish and sweeping curved vertical slats. Diffuses soothing warm white light, projecting artistic linear shadows and inviting warmth across dining rooms, bedside spaces, cafes, and living areas. Comes with a heat-resistant E27 socket, 4W warm LED bulb, 1.12m adjustable hanging cord, and durable black ceiling plate.",
     specs: {
-      "Dimensions": "H: 36cm (Adjustable) × Base Dia: 16cm",
-      "Materials": "Heavy White Veined Marble, Brushed Brass, Matte Steel",
-      "Bulb / Socket": "2 × 50W GU10 Thermal Halogen Warming Bulbs",
-      "Color Temp": "Warm 2400K Candlelight Glow (Built-in 2/4/8hr Timer)",
-      "Voltage / Plug": "110V or 220V configuration according to destination",
-      "Packaging": "Retail presentation gift box + Master shipping carton",
-      "Gross Weight": "2.9 kg | 0.022 CBM"
+      "Brand / Model": "XPERO+ • Model ASXZ_296 (ASIN: B0GHN86JTF)",
+      "Dimensions": "28 cm (L) × 28 cm (W) × 30.5 cm (H)",
+      "Materials": "Premium Fine MDF Wood & Powder-Coated Metal Hardware",
+      "Bulb & Socket": "E27 Universal Base • 4W Warm LED Bulb Included",
+      "Hanging Cord": "1.12 Meter Adjustable Cord for Custom Drop Heights",
+      "Color & Finish": "Antique Brown Wood (Warm White 2700K Ambient Downlight)",
+      "Mounting Type": "Ceiling Mount / Flush Mount with Black Canopy Plate",
+      "Item Weight": "524 Grams",
+      "Application": "Living Room, Dining Area, Bedroom, Cafe, Restaurant, Balcony Decor",
+      "Origin": "Handcrafted by XPERO+, Moradabad, Uttar Pradesh, India"
     }
   }
 ];
 
 // State Management
-let cart = JSON.parse(localStorage.getItem('xpero_cart') || '[]');
+let cart = [];
+try {
+  const saved = localStorage.getItem('xpero_cart');
+  if (saved) {
+    const parsed = JSON.parse(saved);
+    if (Array.isArray(parsed)) cart = parsed;
+  }
+} catch (err) {
+  console.warn('Failed to parse cart from localStorage:', err);
+  cart = [];
+}
 
 // DOM Elements
 const ambientToggleBtn = document.getElementById('ambientToggleBtn');
@@ -142,6 +198,8 @@ const drawerItemsList = document.getElementById('drawerItemsList');
 const drawerSubtotal = document.getElementById('drawerSubtotal');
 const drawerTotalItems = document.getElementById('drawerTotalItems');
 const btnShopAllMaster = document.getElementById('btnShopAllMaster');
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
 
 // Quick View Modal Elements
 const quickViewBackdrop = document.getElementById('quickViewBackdrop');
@@ -163,10 +221,46 @@ let currentActiveProduct = null;
 document.addEventListener('DOMContentLoaded', () => {
   renderCart();
   setupEventListeners();
+  if (heroAmbientSlider) {
+    applyHeroAmbient(heroAmbientSlider.value);
+  }
 });
+
+// Ambient helpers
+function applyHeroAmbient(val) {
+  if (heroSliderValue) heroSliderValue.textContent = `${val}%`;
+  if (heroImage) {
+    const brightness = 0.6 + (val / 100) * 0.55; // 0.6 to 1.15
+    const warmGlow = 1 + (val / 100) * 0.35;
+    heroImage.style.filter = `brightness(${brightness}) contrast(${warmGlow}) saturate(1.15)`;
+  }
+}
+
+function applyModalDimmer(tempK) {
+  if (modalTempDisplay) modalTempDisplay.textContent = `${tempK}K`;
+  if (modalImage) {
+    const warmthRatio = (4000 - tempK) / 1800; // 0 (4000K) to 1 (2200K)
+    modalImage.style.filter = `sepia(${warmthRatio * 0.45}) saturate(${1 + warmthRatio * 0.4}) brightness(${0.85 + warmthRatio * 0.25})`;
+  }
+}
 
 // Event Listeners Setup
 function setupEventListeners() {
+  // Mobile Navigation Menu Toggle
+  if (mobileMenuBtn && navLinks) {
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenuBtn.classList.toggle('active');
+      navLinks.classList.toggle('mobile-open');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenuBtn.classList.remove('active');
+        navLinks.classList.remove('mobile-open');
+      });
+    });
+  }
+
   // Ambient Mode Toggle
   if (ambientToggleBtn) {
     ambientToggleBtn.addEventListener('click', toggleCozyMode);
@@ -175,27 +269,14 @@ function setupEventListeners() {
   // Hero Room Ambient Dimmer Slider
   if (heroAmbientSlider) {
     heroAmbientSlider.addEventListener('input', (e) => {
-      const val = e.target.value;
-      heroSliderValue.textContent = `${val}%`;
-      // Adjust hero visual atmosphere
-      if (heroImage) {
-        const brightness = 0.6 + (val / 100) * 0.55; // 0.6 to 1.15
-        const warmGlow = 1 + (val / 100) * 0.35;
-        heroImage.style.filter = `brightness(${brightness}) contrast(${warmGlow}) saturate(1.15)`;
-      }
+      applyHeroAmbient(e.target.value);
     });
   }
 
   // Quick View Dimmer Slider
   if (modalDimmerSlider) {
     modalDimmerSlider.addEventListener('input', (e) => {
-      const tempK = e.target.value;
-      modalTempDisplay.textContent = `${tempK}K`;
-      if (modalImage) {
-        // Calculate warm sepia / amber filter based on temperature
-        const warmthRatio = (4000 - tempK) / 1800; // 0 (4000K) to 1 (2200K)
-        modalImage.style.filter = `sepia(${warmthRatio * 0.45}) saturate(${1 + warmthRatio * 0.4}) brightness(${0.85 + warmthRatio * 0.25})`;
-      }
+      applyModalDimmer(e.target.value);
     });
   }
 
@@ -259,6 +340,10 @@ function setupEventListeners() {
     if (e.key === 'Escape') {
       closeModal();
       closeCart();
+      if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.classList.remove('active');
+        navLinks.classList.remove('mobile-open');
+      }
     }
   });
 }
@@ -285,15 +370,15 @@ window.openQuickView = function(productId) {
   modalProductNumber.textContent = `Piece No. ${product.number} of 6`;
   modalProductTitle.textContent = product.name;
   modalProductTagline.textContent = product.tagline;
-  modalProductRetail.textContent = `$${product.price}`;
+  modalProductRetail.textContent = product.inrPrice ? `₹${product.inrPrice.toLocaleString('en-IN')} INR ($${product.price} USD)` : `$${product.price} USD`;
   modalProductExport.textContent = `Export FOB: ${product.exportFob}`;
   modalProductDesc.textContent = product.description;
   modalImage.src = product.image;
   modalImage.alt = product.name;
-  modalImage.style.filter = 'none';
+  
   if (modalDimmerSlider) {
     modalDimmerSlider.value = 2700;
-    modalTempDisplay.textContent = '2700K';
+    applyModalDimmer(2700);
   }
 
   // Render Specifications Table
@@ -304,14 +389,33 @@ window.openQuickView = function(productId) {
     modalSpecTableBody.appendChild(tr);
   }
 
+  // Render Amazon Link Button if available
+  const amazonBox = document.getElementById('modalAmazonLinkContainer');
+  if (amazonBox) {
+    if (product.amazonUrl) {
+      amazonBox.innerHTML = `
+        <a href="${product.amazonUrl}" target="_blank" rel="noopener noreferrer" class="btn-amazon-buy">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M15.93 17.09c-2.68 1.98-6.57 2.4-9.84.81-1.39-.68-2.6-1.74-3.56-3.02-.13-.18-.08-.43.1-.56.17-.12.4-.08.54.09.84 1.13 1.91 2.06 3.14 2.66 2.87 1.39 6.27 1.02 8.62-.71.18-.13.43-.09.56.09.13.18.09.43-.09.56l.53.08zm1.09-2.09c-.23-.29-.91-.14-1.26-.06-.11.02-.13-.08-.03-.15.65-.47 1.72-.34 1.98.01.27.35-.07 1.43-.7 1.92-.09.07-.18.04-.15-.06.12-.34.39-1.37.16-1.66zm5.83 5.4c-1.34 1.05-3.32 1.63-5.38 1.63-3.66 0-6.93-1.84-8.85-4.72-.12-.18-.08-.42.09-.54.17-.12.41-.08.53.1 1.74 2.6 4.69 4.26 8.23 4.26 1.86 0 3.65-.52 4.86-1.47.16-.13.41-.09.54.07.13.17.09.41-.07.54l.05-.07z"/></svg>
+          Buy Now on Amazon.in (${product.inrPrice ? '₹' + product.inrPrice.toLocaleString('en-IN') : '$' + product.price + ' USD'})
+        </a>
+      `;
+      amazonBox.style.display = 'block';
+    } else {
+      amazonBox.innerHTML = '';
+      amazonBox.style.display = 'none';
+    }
+  }
+
   quickViewBackdrop.classList.add('open');
   document.body.style.overflow = 'hidden';
 };
 
-function closeModal() {
-  quickViewBackdrop.classList.remove('open');
+window.closeModal = function() {
+  if (quickViewBackdrop) {
+    quickViewBackdrop.classList.remove('open');
+  }
   document.body.style.overflow = '';
-}
+};
 
 // Cart & Quote Functions
 window.addToCart = function(productId) {
@@ -335,6 +439,19 @@ window.addToCart = function(productId) {
   saveCart();
   renderCart();
   showToast(`Added "${product.name}" to your Export Order / Cart`);
+};
+
+window.updateCartQty = function(productId, delta) {
+  const item = cart.find(i => i.id === productId);
+  if (!item) return;
+
+  item.qty += delta;
+  if (item.qty <= 0) {
+    cart = cart.filter(i => i.id !== productId);
+    showToast(`Removed "${item.name}" from quote.`);
+  }
+  saveCart();
+  renderCart();
 };
 
 function addAllLampsToCart() {
@@ -361,14 +478,20 @@ function addAllLampsToCart() {
 }
 
 window.removeFromCart = function(productId) {
-  cart = cart.filter(item => item.id !== productId);
+  const item = cart.find(i => i.id === productId);
+  const name = item ? item.name : 'Item';
+  cart = cart.filter(i => i.id !== productId);
   saveCart();
   renderCart();
-  showToast('Item removed from quotation.');
+  showToast(`Removed "${name}" from quotation.`);
 };
 
 function saveCart() {
-  localStorage.setItem('xpero_cart', JSON.stringify(cart));
+  try {
+    localStorage.setItem('xpero_cart', JSON.stringify(cart));
+  } catch (e) {
+    console.warn('Could not save cart to localStorage:', e);
+  }
 }
 
 function renderCart() {
@@ -402,8 +525,13 @@ function renderCart() {
         <img src="${item.image}" alt="${item.name}" class="cart-item-thumb">
         <div class="cart-item-info">
           <h4 class="cart-item-title">${item.name}</h4>
-          <span class="cart-item-sub">MOQ: ${item.moq} | Qty: ${item.qty}</span>
+          <span class="cart-item-sub">MOQ: ${item.moq}</span>
           <div class="cart-item-price">$${itemTotal.toLocaleString()} <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 400;">($${item.price} each)</span></div>
+          <div class="cart-qty-stepper">
+            <button type="button" class="btn-qty-step" onclick="updateCartQty(${item.id}, -1)" title="Decrease quantity">&minus;</button>
+            <span class="cart-qty-value">${item.qty}</span>
+            <button type="button" class="btn-qty-step" onclick="updateCartQty(${item.id}, 1)" title="Increase quantity">&plus;</button>
+          </div>
         </div>
         <button class="btn-remove-item" onclick="removeFromCart(${item.id})" title="Remove item">&times;</button>
       </div>
@@ -414,15 +542,19 @@ function renderCart() {
   if (drawerTotalItems) drawerTotalItems.textContent = `${totalCount} item${totalCount > 1 ? 's' : ''}`;
 }
 
-function openCart() {
-  cartDrawerOverlay.classList.add('open');
+window.openCart = function() {
+  if (cartDrawerOverlay) {
+    cartDrawerOverlay.classList.add('open');
+  }
   document.body.style.overflow = 'hidden';
-}
+};
 
-function closeCart() {
-  cartDrawerOverlay.classList.remove('open');
+window.closeCart = function() {
+  if (cartDrawerOverlay) {
+    cartDrawerOverlay.classList.remove('open');
+  }
   document.body.style.overflow = '';
-}
+};
 
 // Generate & Dispatch Export Quote to WhatsApp
 window.dispatchWhatsAppQuote = function() {
@@ -440,7 +572,7 @@ window.dispatchWhatsAppQuote = function() {
   message += `\nPlease provide shipping FOB quote, container CBM estimates, and lead time. Thank you!`;
 
   const encoded = encodeURIComponent(message);
-  window.open(`https://api.whatsapp.com/send?text=${encoded}`, '_blank');
+  window.open(`https://api.whatsapp.com/send?phone=919876543210&text=${encoded}`, '_blank', 'noopener,noreferrer');
   showToast('Opening WhatsApp with your generated export quotation...');
 };
 
@@ -448,22 +580,99 @@ window.dispatchWhatsAppQuote = function() {
 function handleRfqSubmit(e) {
   e.preventDefault();
   const formData = new FormData(e.target);
+  const name = formData.get('name') || '';
   const company = formData.get('company') || 'Client';
+  const email = formData.get('email') || '';
   const country = formData.get('country') || 'International';
+  const lampInterest = formData.get('lamp_interest') || 'All Signature Lamps';
+  const quantity = formData.get('quantity') || 'Commercial Batch';
+  const notes = formData.get('notes') || '';
 
-  showToast(`✅ Thank you! Export RFQ for ${company} (${country}) submitted successfully. Our export desk will reply within 4 hours.`);
+  showToast(`✅ Thank you, ${name}! Export RFQ for ${company} (${country}) submitted. Opening WhatsApp Export Desk...`);
+
+  const rfqMsg = `*XPERO+ WHOLESALE RFQ INQUIRY*\n` +
+    `👤 *Name:* ${name}\n` +
+    `🏢 *Company:* ${company}\n` +
+    `📧 *Email:* ${email}\n` +
+    `🌍 *Destination Country:* ${country}\n` +
+    `💡 *Lamp Selection:* ${lampInterest}\n` +
+    `📦 *Order Volume:* ${quantity}\n` +
+    (notes ? `📝 *Specifications / Port:* ${notes}\n` : '') +
+    `\nPlease provide our B2B trade catalog and quotation.`;
+
+  const encoded = encodeURIComponent(rfqMsg);
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=919876543210&text=${encoded}`;
+
+  setTimeout(() => {
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+  }, 1000);
+
   e.target.reset();
 }
 
-// Trigger Catalog Download Simulation
+// Trigger Catalog Lookbook Download
 function triggerCatalogDownload() {
-  showToast('📥 Preparing Xpero+ 2026 Lighting Catalog (PDF)...');
+  showToast('📥 Generating Xpero+ 2026 Lighting Lookbook...');
+  
+  const catalogHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xpero+ Lighting Lookbook 2026</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; padding: 40px 20px; background: #fdfbf7; color: #271d17; max-width: 900px; margin: 0 auto; line-height: 1.6; }
+    .header { text-align: center; border-bottom: 2px solid #df8f3b; padding-bottom: 24px; margin-bottom: 32px; }
+    h1 { font-family: Georgia, serif; font-size: 32px; letter-spacing: 0.05em; text-transform: uppercase; margin: 0 0 8px 0; color: #271d17; }
+    .sub { color: #df8f3b; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.15em; margin: 0; }
+    .intro { font-size: 14px; color: #6e5e54; margin-top: 12px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .card { background: #ffffff; border: 1px solid #e6dacd; border-radius: 8px; padding: 18px; box-shadow: 0 4px 12px rgba(0,0,0,0.04); }
+    .pill { display: inline-block; background: #df8f3b; color: #fff; font-size: 11px; font-weight: bold; border-radius: 999px; padding: 2px 8px; margin-bottom: 8px; }
+    .card h3 { font-family: Georgia, serif; font-size: 18px; margin: 0 0 6px 0; color: #271d17; }
+    .tagline { font-size: 12px; color: #9c8a7e; font-style: italic; margin-bottom: 10px; }
+    .desc { font-size: 13px; color: #6e5e54; margin-bottom: 12px; }
+    .price-box { border-top: 1px solid #f0e6dc; padding-top: 10px; font-size: 13px; font-weight: 600; display: flex; justify-content: space-between; }
+    .footer { margin-top: 40px; border-top: 1px solid #e6dacd; padding-top: 20px; text-align: center; font-size: 12px; color: #9c8a7e; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Xpero+</h1>
+    <p class="sub">Artisanal Lighting & Export Portfolio 2026</p>
+    <p class="intro">Multi-Market UL/CE/RoHS Certified | Worldwide Container Freight | export@xperoplus.com</p>
+  </div>
+  <div class="grid">
+    ${signatureLamps.map(l => `
+      <div class="card">
+        <span class="pill">Piece #${l.number}</span>
+        <h3>${l.name}</h3>
+        <div class="tagline">${l.tagline}</div>
+        <p class="desc">${l.description}</p>
+        <div class="price-box">
+          <span>Retail: ${l.inrPrice ? '₹' + l.inrPrice.toLocaleString('en-IN') + ' ($' + l.price + ' USD)' : '$' + l.price}</span>
+          <span style="color: #df8f3b;">FOB: ${l.exportFob}</span>
+        </div>
+      </div>
+    `).join('')}
+  </div>
+  <div class="footer">
+    © 2026 Xpero+. All Rights Reserved. Official Export Desk: +91 98765 43210 | export@xperoplus.com
+  </div>
+</body>
+</html>`;
+
+  const blob = new Blob([catalogHtml], { type: 'text/html' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'Xpero_Plus_Export_Lookbook_2026.html';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  setTimeout(() => URL.revokeObjectURL(url), 10000);
+
   setTimeout(() => {
-    // Generate simulated download
-    const link = document.createElement('a');
-    link.href = '#';
-    link.setAttribute('download', 'Xpero_Plus_Lighting_Catalog_2026.pdf');
-    showToast('✨ Catalog ready! For bulk spec sheets, contact export@xperoplus.com');
+    showToast('✨ Lookbook 2026 downloaded! Double-click to view or print as PDF.');
   }, 1000);
 }
 
@@ -483,3 +692,8 @@ function showToast(message) {
     toast.classList.remove('show');
   }, 3800);
 }
+
+// Global window bindings
+window.toggleCozyMode = toggleCozyMode;
+window.triggerCatalogDownload = triggerCatalogDownload;
+

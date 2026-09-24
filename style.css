@@ -1588,41 +1588,13 @@ body.cozy-mode-active .amazon-badge-link {
   color: var(--accent-amber);
 }
 
-.cart-item-actions-row {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-  margin-top: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.btn-item-amazon-direct {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.28rem 0.65rem;
-  background: rgba(255, 153, 0, 0.12);
-  color: #ff9900;
-  border: 1px solid rgba(255, 153, 0, 0.35);
-  border-radius: var(--radius-sm);
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-decoration: none;
-  transition: var(--transition);
-}
-
-.btn-item-amazon-direct:hover {
-  background: #ff9900;
-  color: #111;
-  border-color: #ff9900;
-}
-
 .cart-qty-stepper {
   display: inline-flex;
   align-items: center;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
   background: var(--bg-primary);
+  margin-top: 0.4rem;
   overflow: hidden;
 }
 

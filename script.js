@@ -530,15 +530,22 @@ function renderCart() {
         <img src="${item.image || lamp.image}" alt="${item.name}" class="cart-item-thumb">
         <div class="cart-item-info">
           <h4 class="cart-item-title">${item.name}</h4>
-          <span class="cart-item-sub">Amazon ASIN: ${lamp.asin || 'Official'} • Model: ${lamp.model || ''}</span>
           <div class="cart-item-price">
             ₹${itemInrTotal.toLocaleString('en-IN')}
             <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 400;">(~$${itemTotal} USD)</span>
           </div>
-          <div class="cart-qty-stepper">
-            <button type="button" class="btn-qty-step" onclick="updateCartQty(${item.id}, -1)" title="Decrease quantity">&minus;</button>
-            <span class="cart-qty-value">${item.qty}</span>
-            <button type="button" class="btn-qty-step" onclick="updateCartQty(${item.id}, 1)" title="Increase quantity">&plus;</button>
+          <div class="cart-item-actions-row">
+            <div class="cart-qty-stepper">
+              <button type="button" class="btn-qty-step" onclick="updateCartQty(${item.id}, -1)" title="Decrease quantity">&minus;</button>
+              <span class="cart-qty-value">${item.qty}</span>
+              <button type="button" class="btn-qty-step" onclick="updateCartQty(${item.id}, 1)" title="Increase quantity">&plus;</button>
+            </div>
+            ${lamp.amazonUrl ? `
+              <a href="${lamp.amazonUrl}" target="_blank" rel="noopener noreferrer" class="btn-item-amazon-direct" title="Buy this lamp on Amazon India">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M15.93 17.09c-2.68 1.98-6.57 2.4-9.84.81-1.39-.68-2.6-1.74-3.56-3.02-.13-.18-.08-.43.1-.56.17-.12.4-.08.54.09.84 1.13 1.91 2.06 3.14 2.66 2.87 1.39 6.27 1.02 8.62-.71.18-.13.43-.09.56.09.13.18.09.43-.09.56l.53.08zm1.09-2.09c-.23-.29-.91-.14-1.26-.06-.11.02-.13-.08-.03-.15.65-.47 1.72-.34 1.98.01.27.35-.07 1.43-.7 1.92-.09.07-.18.04-.15-.06.12-.34.39-1.37.16-1.66zm5.83 5.4c-1.34 1.05-3.32 1.63-5.38 1.63-3.66 0-6.93-1.84-8.85-4.72-.12-.18-.08-.42.09-.54.17-.12.41-.08.53.1 1.74 2.6 4.69 4.26 8.23 4.26 1.86 0 3.65-.52 4.86-1.47.16-.13.41-.09.54.07.13.17.09.41-.07.54l.05-.07z"/></svg>
+                <span>Buy on Amazon</span> ↗
+              </a>
+            ` : ''}
           </div>
         </div>
         <button class="btn-remove-item" onclick="removeFromCart(${item.id})" title="Remove item">&times;</button>
@@ -568,40 +575,43 @@ window.closeCart = function() {
   document.body.style.overflow = '';
 };
 
-// Redirect to Amazon Panel with all selected lamps to Buy in One Click
+// Buy All Selected Lamps on Amazon India
 window.buyAllOnAmazon = function() {
   if (!cart || cart.length === 0) {
     // If no lamps are selected yet, automatically add all 6 signature lamps
     addAllLampsToCart();
   }
 
-  // Construct Amazon India remote cart parameters
-  // URL pattern: https://www.amazon.in/gp/aws/cart/add.html?ASIN.1=...&Quantity.1=...
-  const queryParts = [];
-  let itemIndex = 1;
+  const selectedItems = cart.map(item => {
+    const lamp = signatureLamps.find(l => l.id === item.id) || item;
+    return {
+      id: item.id,
+      name: item.name,
+      qty: item.qty,
+      url: lamp.amazonUrl || (lamp.asin ? `https://www.amazon.in/dp/${lamp.asin}` : null),
+      price: lamp.inrPrice || 0
+    };
+  }).filter(item => item.url);
 
-  cart.forEach(cartItem => {
-    const lamp = signatureLamps.find(l => l.id === cartItem.id);
-    const asin = (lamp && lamp.asin) || cartItem.asin;
-    const qty = Math.max(1, parseInt(cartItem.qty, 10) || 1);
-    if (asin) {
-      queryParts.push(`ASIN.${itemIndex}=${encodeURIComponent(asin)}&Quantity.${itemIndex}=${qty}`);
-      itemIndex++;
-    }
-  });
-
-  if (queryParts.length === 0) {
-    showToast('No valid Amazon products found in selection.');
+  if (selectedItems.length === 0) {
+    showToast('No valid Amazon listings found for selected items.');
     return;
   }
 
-  const amazonCartUrl = `https://www.amazon.in/gp/aws/cart/add.html?${queryParts.join('&')}`;
-  const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
+  // Open the first selected product page immediately in a new tab
+  showToast(`🛒 Opening ${selectedItems[0].name} on Amazon India...`);
+  window.open(selectedItems[0].url, '_blank', 'noopener,noreferrer');
 
-  showToast(`🛒 Redirecting to Amazon India with all ${totalCount} selected lamp(s) in 1-Click...`);
-
-  // Open Amazon Cart in new window
-  window.open(amazonCartUrl, '_blank', 'noopener,noreferrer');
+  // If multiple items are selected, open subsequent items in separate tabs with a staggered delay
+  if (selectedItems.length > 1) {
+    for (let i = 1; i < selectedItems.length; i++) {
+      const item = selectedItems[i];
+      setTimeout(() => {
+        window.open(item.url, '_blank', 'noopener,noreferrer');
+      }, i * 250);
+    }
+    showToast(`🛒 Opened ${selectedItems.length} selected lamps on Amazon India! Click "Buy Now" on Amazon.`);
+  }
 };
 
 // Generate & Dispatch Export Quote to WhatsApp
